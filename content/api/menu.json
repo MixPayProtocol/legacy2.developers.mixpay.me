@@ -33,6 +33,16 @@
         ]
       },
       {
+        "name": "Users",
+        "docs": [
+          {
+            "title": "Get Mixin UUID",
+            "permalink": "users/get-mixin-uuid",
+            "contentPath": "users/get-mixin-uuid.md"
+          }
+        ]
+      },
+      {
         "name": "Assets",
         "docs": [
           {
