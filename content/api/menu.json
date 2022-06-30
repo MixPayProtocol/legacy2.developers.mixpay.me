@@ -37,17 +37,17 @@
         "docs": [
           {
             "title": "Payment Assets",
-            "permalink": "payment-assets",
+            "permalink": "assets/payment-assets",
             "contentPath": "assets/payment-assets.md"
           },
           {
             "title": "Quote Assets",
-            "permalink": "quote-assets",
+            "permalink": "assets/quote-assets",
             "contentPath": "assets/quote-assets.md"
           },
           {
             "title": "Settlement Assets",
-            "permalink": "settlement-assets",
+            "permalink": "assets/settlement-assets",
             "contentPath": "assets/settlement-assets.md"
           }
         ]
