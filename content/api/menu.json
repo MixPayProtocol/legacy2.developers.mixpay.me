@@ -7,8 +7,8 @@
         "docs": [
           {
             "title": "API Overview",
-            "permalink": "api-overview",
-            "contentPath": "api-overview.md"
+            "permalink": "overview",
+            "contentPath": "overview.md"
           }
         ]
       },
