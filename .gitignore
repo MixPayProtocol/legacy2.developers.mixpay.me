@@ -8,3 +8,5 @@ coverage
 tmp
 public/*
 !public/icons
+!public/images
+!public/js
