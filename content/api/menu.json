@@ -1,0 +1,97 @@
+[
+  {
+    "name": "API",
+    "categories": [
+      {
+        "name": "root",
+        "docs": [
+          {
+            "title": "API Overview",
+            "permalink": "api-overview",
+            "contentPath": "api-overview.md"
+          }
+        ]
+      },
+      {
+        "name": "Connect",
+        "docs": [
+          {
+            "title": "Rate Limiting",
+            "permalink": "rate-limiting",
+            "contentPath": "connect/rate-limiting.md"
+          },
+          {
+            "title": "Error Codes",
+            "permalink": "error-codes",
+            "contentPath": "connect/error-codes.md"
+          },
+          {
+            "title": "About Memo",
+            "permalink": "memo",
+            "contentPath": "connect/memo.md"
+          }
+        ]
+      },
+      {
+        "name": "Assets",
+        "docs": [
+          {
+            "title": "Payment Assets",
+            "permalink": "payment-assets",
+            "contentPath": "assets/payment-assets.md"
+          },
+          {
+            "title": "Quote Assets",
+            "permalink": "quote-assets",
+            "contentPath": "assets/quote-assets.md"
+          },
+          {
+            "title": "Settlement Assets",
+            "permalink": "settlement-assets",
+            "contentPath": "assets/settlement-assets.md"
+          }
+        ]
+      },
+      {
+        "name": "Payments",
+        "docs": [
+          {
+            "title": "Pay Link",
+            "permalink": "payments/pay",
+            "contentPath": "payments/pay.md"
+          },
+          {
+            "title": "One-time Payment",
+            "permalink": "payments/one-time-payment",
+            "contentPath": "payments/one-time-payment.md"
+          },
+          {
+            "title": "Accepting Payments",
+            "permalink": "payments/accepting-payments",
+            "contentPath": "payments/accepting-payments.md"
+          },
+          {
+            "title": "On-chain Payments",
+            "permalink": "payments/onchain-payments",
+            "contentPath": "payments/onchain-payments.md"
+          },
+          {
+            "title": "Payments Results",
+            "permalink": "payments/payments-results",
+            "contentPath": "payments/payments-results.md"
+          },
+          {
+            "title": "Payments Estimated",
+            "permalink": "payments/payments-estimated",
+            "contentPath": "payments/payments-estimated.md"
+          },
+          {
+            "title": "Payments Info",
+            "permalink": "payments/payments-info",
+            "contentPath": "payments/payments-info.md"
+          }
+        ]
+      }
+    ]
+  }
+]

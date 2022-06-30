@@ -1,0 +1,37 @@
+{
+  "index_name": "adonisjs_next",
+  "start_urls": [
+    {
+      "url": "https://developers.mixpay.me/guides/",
+      "page_rank": "2",
+      "variables": {
+        "zone": "guides"
+      }
+    },
+    {
+      "url": "https://developers.mixpay.me/api/",
+      "page_rank": "1",
+      "variables": {
+        "zone": "api"
+      }
+    }
+  ],
+  "stop_urls": [],
+  "selectors": {
+    "default": {
+      "lvl0": {
+        "selector": "//*nav//*[contains(@class,'active')]/preceding::h3[1]",
+        "default_value": "Documentation",
+        "type": "xpath",
+        "global": true
+      },
+      "lvl1": ".markdown h1",
+      "lvl2": ".markdown h2",
+      "lvl3": ".markdown h3",
+      "lvl4": ".markdown h4",
+      "text": ".markdown p, .markdown li"
+    }
+  },
+  "conversation_id": ["1156190793"],
+  "nb_hits": 69556
+}

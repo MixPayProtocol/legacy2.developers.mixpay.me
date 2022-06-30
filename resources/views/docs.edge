@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ doc.title }} - Payment for Web3 - MixPay</title>
+  @if(file.excerpt)
+    <meta name="description" content="{{ file.excerpt }}">
+  @end
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="article">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link
+    rel="preload"
+    href="{{ asset('assets/fonts/Calibre.woff2') }}"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link
+    rel="preload"
+    href="{{ asset('assets/fonts/Calibre-Medium.woff2') }}"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link
+    rel="preload"
+    href="{{ asset('assets/fonts/Calibre-Semibold.woff2') }}"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link
+    rel="preload"
+    href="{{ asset('assets/fonts/Calibre-Bold.woff2') }}"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link
+    rel="preload"
+    href="{{ asset('assets/fonts/JetBrainsMono-Regular.woff2') }}"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+
+  {{-- Since entry point loading is defered, we have to keep this inline to avoid FOUC --}}
+  <script>
+    if (localStorage.colorMode === 'dark' || (!('colorMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
+  @entryPointStyles('app')
+  @entryPointScripts('app')
+  <script
+    async
+    defer data-domain="adonisjs.com"
+    src="https://analytics.adonisjs.com/js/index.js"
+  ></script>
+</head>
+
+<body>
+  @include('partials/header')
+  <div up-main>
+    @include('partials/sidebar')
+
+    <div id="document" up-main>
+      @include('partials/doc')
+      @include('partials/toc')
+    </div>
+  </div>
+</body>
+
+<script src="https://developers.mixpay.me/js/intercom.js"></script>
+
+</html>

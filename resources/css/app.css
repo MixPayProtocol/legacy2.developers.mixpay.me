@@ -1,0 +1,157 @@
+/*
+--------------------------------
+COMMON STYLES
+--------------------------------
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 72px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  font-weight: var(--base-font-weight);
+  line-height: 1.4;
+  font-size: var(--base-font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+  font-weight: var(--bold-font-weight);
+}
+
+code {
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: auto;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.for-desktop {
+  display: none !important;
+}
+@media (min-width: 1024px) {
+  .for-desktop {
+    display: block !important;
+  }
+
+  .for-mobile {
+    display: none !important;
+  }
+
+  :root {
+    --markdown-content-width: 58ch;
+  }
+}
+
+
+@media (min-width: 768px) {
+  :root {
+    --space-x: 40px;
+    --toc-width: 260px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+
+  :root {
+    --markdown-content-width: 70ch;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  :root {
+    --markdown-content-width: 75ch;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  :root {
+    --markdown-content-width: 90ch;
+  }
+}
+
+
+/*
+--------------------------------
+DOC CONTENT STYLES
+--------------------------------
+*/
+
+.doc {
+  padding: 0 var(--space-x) 40px var(--space-x);
+}
+
+@media (min-width: 1024px) {
+  .doc {
+    padding-left: var(--sidebar-width);
+    padding-right: 0;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .doc {
+    padding-right: var(--toc-width);
+  }
+}
+
+.banner {
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+}
+
+.banner div:first-child {
+  border-right: 1px solid var(--lighter-gray);
+  padding-right: 60px;
+  margin-right: 60px;
+}
+
+.banner h1 {
+  font-size: 6.8rem;
+  font-weight: 600;
+}
+
+.banner h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  line-height: 1;
+}
+
+.banner p {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.banner a {
+  color: var(--brand-color);
+}
+
+span.required {
+  color: #ed5959;
+}
