@@ -1,9 +1,9 @@
-@if(app.env.get('ALGOLIA_API_KEY'))
+{{--  @if(app.env.get('ALGOLIA_API_KEY'))  --}}
   <div
     class="search-wrapper"
     x-data="search('{{ app.env.get('ALGOLIA_API_KEY') }}')"
   >
-    <button
+    {{--  <button
       class="search-trigger"
       title="Open search popup"
       aria-label="Open search popup"
@@ -20,6 +20,6 @@
         ></path>
       </svg>
       <span class="text"> Search </span>
-    </button>
+    </button>  --}}
   </div>
-@end
+{{--  @end  --}}

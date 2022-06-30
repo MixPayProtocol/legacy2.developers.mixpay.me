@@ -12,18 +12,6 @@
       "aliases": [],
       "flags": []
     },
-    "fetch:collaborators": {
-      "settings": {
-        "loadApp": true,
-        "stayAlive": false
-      },
-      "commandPath": "./commands/FetchCollaborators",
-      "commandName": "fetch:collaborators",
-      "description": "Fetch collaborators from Github API and write to content/collaborators.json file",
-      "args": [],
-      "aliases": [],
-      "flags": []
-    },
     "dump:rcfile": {
       "settings": {},
       "commandPath": "@adonisjs/core/build/commands/DumpRc",
@@ -35,7 +23,8 @@
     },
     "list:routes": {
       "settings": {
-        "loadApp": true
+        "loadApp": true,
+        "stayAlive": true
       },
       "commandPath": "@adonisjs/core/build/commands/ListRoutes/index",
       "commandName": "list:routes",
