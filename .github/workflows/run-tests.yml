@@ -20,10 +20,8 @@ jobs:
       - name: Copy .env
         run: cp .env.example .env
       - name: Building assets
-        run: |
-          npm run build
+        run: npm run build
       - name: Running test
-        run: |
-          node ace test
+        run: node ace test
         env:
           CI: true
