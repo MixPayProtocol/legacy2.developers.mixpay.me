@@ -9,7 +9,7 @@ for (const category of Guides[0].categories) {
     const url = '/guides/' + doc.permalink
     test('display ' + url + ' page', async ({ client }) => {
       const response = await client.get(url)
-      console.log(response);
+      console.log(response.text);
       response.assertStatus(200)
       response.assertTextIncludes('Payment for Web3 - MixPay')
     })
