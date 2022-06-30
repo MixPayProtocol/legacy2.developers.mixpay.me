@@ -10,7 +10,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  test:
+  run-tests:
 
     runs-on: ubuntu-20.04
     steps:
@@ -18,8 +18,8 @@ jobs:
       - name: Install dependency
         run: npm install
       - name: Copy .env
-        run: copy('.env.example', '.env');
-      - name: Init testing
+        run: cp .env.example .env
+      - name: Running test
         run: |
           node ace test
         env:
