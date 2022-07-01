@@ -22,5 +22,5 @@ Quote assets support cryptocurrencies and fiat currencies. And the detailed info
 
 | Currency | IOS Code |
 | :-- | --- |
-| United States Dollar | USD |
-| United Arab Emirates Dirham | AED |
+| United States Dollar | usd |
+| United Arab Emirates Dirham | aed |
