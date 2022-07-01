@@ -61,8 +61,8 @@
   font-weight: var(--bold-font-weight);
   font-size: var(--markdown-h2-size);
   border-top: 1px solid var(--lighter-gray);
-  margin: 70px 0 20px 0;
-  padding-top: 50px;
+  margin: 50px 0 20px 0;
+  padding-top: 20px;
   position: relative;
   line-height: 1;
 }
@@ -75,8 +75,9 @@
   color: var(--heading-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--markdown-h3-size);
-  margin: 60px 0 10px 0;
+  margin: 0px 0 30px 0;
   position: relative;
+  padding-top: 20px;
 }
 /** Required only when using Calibre */
 .markdown h3 code {

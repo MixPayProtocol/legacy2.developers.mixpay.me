@@ -164,9 +164,12 @@ Alpine.data('tocMenu', function () {
     init() {
       const anchors = this.$el.querySelectorAll('a')
       anchors.forEach((link) => {
-        link.onclick = function () {
+        link.onclick = function (e) {
+          e.preventDefault();
           anchors.forEach((anchor) => anchor.classList.remove('up-current'))
           link.classList.add('up-current')
+
+          scrollToTargetAdjusted(link);
         }
       })
     },
@@ -213,6 +216,18 @@ if (activeSidebarItem) {
   activeSidebarItem.scrollIntoView({
     block: 'center',
   })
+}
+
+function scrollToTargetAdjusted(target){
+  var element = document.querySelector('#' + target.hash.slice(1))
+  var headerOffset = 50;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
 }
 
 Alpine.start()

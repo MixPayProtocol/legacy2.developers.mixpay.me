@@ -67,7 +67,7 @@ https://api.mixpay.me/v1/payments
 
 ### Example request - Create Mixin Payment
 
-```
+```bash
 curl -i -X POST https://api.mixpay.me/v1/payments \
   -d "payeeId"="a38ed284-5689-4fb9-8c2a-91fba5e32ce9" \
   -d "paymentAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
@@ -80,7 +80,7 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
 
 ### Example request - Create On Chain Payment
 
-```
+```bash
 curl -i -X POST https://api.mixpay.me/v1/payments \
   -d "payeeId"="a38ed284-5689-4fb9-8c2a-91fba5e32ce9" \
   -d "paymentAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
@@ -137,7 +137,7 @@ Response
 }
 ```
 
-### Step 3 - Perform actions for the user to pay
+## Step 3 - Perform actions for the user to pay
 
 When you get the result of the [Create Payments](https://developers.mixpay.me/docs/api/payments/accepting-payments) API, you can perform corresponding actions.
 
@@ -145,7 +145,7 @@ If it's a Mixin payment, then you can use [Mixin URL Schema](https://developers
 
 If it's a on-chain payment, in the JSON Response, there is a key call `destination`, this is the Address customer has to transfer the cryptocurrency to. Note that if the payment assets are EOS, you can use the tag and destination from the API result.
 
-### Step 4 - Checking the payment results
+## Step 4 - Checking the payment results
 
 Finally use the [payments-results API](https://developers.mixpay.me/docs/api/payments/payments-results) to loop query payments result, the parameter is the `traceId` you generated. And the response is the `status` of payment. The `status` has three parameters, unpaid, failed and success.
 

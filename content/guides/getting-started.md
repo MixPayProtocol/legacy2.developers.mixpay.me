@@ -36,7 +36,7 @@ Please [see here](https://developers.mixpay.me/docs/api-overview#one-time-payme
 
 If you want to exchange 0.01 BTC to ETH, you need to do a lot of work. But if you use MixPay, you only need to make a simple request.
 
-```
+```bash
 curl -i -X POST -H "Content-Type: application/json" \
     https://api.mixpay.me/v1/payments --data PAYLOAD
 ```
