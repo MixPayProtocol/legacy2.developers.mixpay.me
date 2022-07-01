@@ -3,7 +3,7 @@
 Providing a Mixin ID, like `40053095`, will get back to your `a38ed284-5689-4fb9-8c2a-91fba5e32ce9`.
 
 :::info
-This API only searches the MixPay users, and will not search Mixin Network. That means you have to use our MixPay App first. How to use MixPay? Please reference [Getting Started](https://developers.mixpay.me/docs/getting-started). Normally you can use this API to get `payeeID`.
+This API only searches the MixPay users, and will not search Mixin Network. That means you have to use our MixPay App first. How to use MixPay? Please reference [Getting Started](https://developers.mixpay.me/guides/getting-started). Normally you can use this API to get `payeeID`.
 :::
 
 ## How to get Mixin ID?

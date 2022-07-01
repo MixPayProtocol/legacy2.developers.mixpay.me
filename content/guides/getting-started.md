@@ -32,7 +32,7 @@ You just need to ask someone to open this link to pay.
 
 ![](https://developers.mixpay.me/images/pvfjlpq.gif)
 
-Please [see here](https://developers.mixpay.me/docs/api-overview#one-time-payment) for link generation rules.
+Please [see here](https://developers.mixpay.me/api/overview#one-time-payment) for link generation rules.
 
 If you want to exchange 0.01 BTC to ETH, you need to do a lot of work. But if you use MixPay, you only need to make a simple request.
 
@@ -53,4 +53,4 @@ PAYLOAD
 }
 ```
 
-For more parameters, please check [API](https://developers.mixpay.me/docs/api-overview).
+For more parameters, please check [API](https://developers.mixpay.me/api/overview).

@@ -2,7 +2,7 @@ MixPay is decentralized and supports Mixin Messenger and any on-chain wallet for
 
 ## Settlement Assets List
 
-Settlement assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer this [api](https://developers.mixpay.me/docs/api/assets/settlement-assets).
+Settlement assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer this [api](https://developers.mixpay.me/api/assets/settlement-assets).
 
 ### **Cryptocurrencies**
 

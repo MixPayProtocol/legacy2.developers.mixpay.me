@@ -15,25 +15,25 @@ Let's start with a detailed guide.
 
 Use the following three API to
 
--   [Payment Assets](https://developers.mixpay.me/docs/api/assets/payment-assets) - Used to let payer choose which payment cryptocurrency he/she wants to pay;
--   [Quote Assets](https://developers.mixpay.me/docs/api/assets/quote-assets) - Used when you calculate the total payment amount and show it to the user;
--   [Settlement Assets](https://developers.mixpay.me/docs/api/assets/settlement-assets) - Used when you setting the payee settlement type.
+-   [Payment Assets](https://developers.mixpay.me/api/assets/payment-assets) - Used to let payer choose which payment cryptocurrency he/she wants to pay;
+-   [Quote Assets](https://developers.mixpay.me/api/assets/quote-assets) - Used when you calculate the total payment amount and show it to the user;
+-   [Settlement Assets](https://developers.mixpay.me/api/assets/settlement-assets) - Used when you setting the payee settlement type.
 
 ## Step 2 - Create a payment
 
-1.  There is no need to register MixPay to use MixPay API. You can just use MixPay API with your preferred languages. MixPay API click [here](https://developers.mixpay.me/docs/api-overview).
+1.  There is no need to register MixPay to use MixPay API. You can just use MixPay API with your preferred languages. MixPay API click [here](https://developers.mixpay.me/api/overview).
 
 2.  You can use this bot(7000101422) to get the Mixin UUID, just send the Mixin ID in the chat window to the bot. It's simple and no programming is required.
 
-3.  Also if the user UUID you want to acquire is a MixPay user, you can get this UUID via [Get Mixin UUID API](https://developers.mixpay.me/docs/api/users/get-mixin-uuid).
+3.  Also if the user UUID you want to acquire is a MixPay user, you can get this UUID via [Get Mixin UUID API](https://developers.mixpay.me/api/users/get-mixin-uuid).
 
-4.  You can use [On-chain Payments](https://developers.mixpay.me/docs/api/payments/onchain-payments) and [Create Payments](https://developers.mixpay.me/docs/api/payments/accepting-payments) API to create a payment. The specific parameters are as below. And you can place the payment link on a button.
+4.  You can use [On-chain Payments](https://developers.mixpay.me/api/payments/onchain-payments) and [Create Payments](https://developers.mixpay.me/api/payments/accepting-payments) API to create a payment. The specific parameters are as below. And you can place the payment link on a button.
 
 :::note
 Tip: Settlement assets support cryptocurrency and fiat currency, if you need fiat currency for settlement, just contact Robin(Mixin ID: **[26930](https://mixin.one/codes/89f7e832-ff53-4fff-ad47-10c68ec96ae2)**) to apply.
 :::
 
-When creating a payment, you need to pass a `traceId`, with traceId, you can get the payment result using this API - [Payments Results](https://developers.mixpay.me/docs/api/payments/payments-results).
+When creating a payment, you need to pass a `traceId`, with traceId, you can get the payment result using this API - [Payments Results](https://developers.mixpay.me/api/payments/payments-results).
 
 The `traceId` you can generate randomly, the format is UUID, you need to generate this UUID, and then store it in your orders database table for future to use, for example, checking the crypto payment result.
 
@@ -139,7 +139,7 @@ Response
 
 ## Step 3 - Perform actions for the user to pay
 
-When you get the result of the [Create Payments](https://developers.mixpay.me/docs/api/payments/accepting-payments) API, you can perform corresponding actions.
+When you get the result of the [Create Payments](https://developers.mixpay.me/api/payments/accepting-payments) API, you can perform corresponding actions.
 
 If it's a Mixin payment, then you can use [Mixin URL Schema](https://developers.mixin.one/docs/schema) to wake up Mixin Wallet to make a payment.
 
@@ -147,7 +147,7 @@ If it's a on-chain payment, in the JSON Response, there is a key call `destinat
 
 ## Step 4 - Checking the payment results
 
-Finally use the [payments-results API](https://developers.mixpay.me/docs/api/payments/payments-results) to loop query payments result, the parameter is the `traceId` you generated. And the response is the `status` of payment. The `status` has three parameters, unpaid, failed and success.
+Finally use the [payments-results API](https://developers.mixpay.me/api/payments/payments-results) to loop query payments result, the parameter is the `traceId` you generated. And the response is the `status` of payment. The `status` has three parameters, unpaid, failed and success.
 
 ## Q & A
 

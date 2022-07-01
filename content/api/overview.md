@@ -2,6 +2,6 @@ MixPay is decentralized and supports Mixin Messenger and any on-chain wallet for
 
 ## Getting Started
 
-You only need to set the amount and currency of the [payment link](https://developers.mixpay.me/docs/api/payments/pay), and MixPay will do the rest.
+You only need to set the amount and currency of the [payment link](https://developers.mixpay.me/api/payments/pay), and MixPay will do the rest.
 
 In addition to this easy way, you can use the MixPay API to build your application in any language.
