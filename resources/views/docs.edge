@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ doc.title }} - {{ doc.zone == 'API' ? 'MixPay | API Reference' : 'MixPay | Developer Documents' }}</title>
+  <title>{{ doc.title }}{{ doc.category != 'root' ? ' - ' + doc.category : ''  }} {{ doc.zone == 'API' ? '| MixPay API Reference' : '| MixPay Developer Documents' }}</title>
   @if(file.excerpt)
     <meta name="description" content="{{ file.excerpt }}">
   @end
