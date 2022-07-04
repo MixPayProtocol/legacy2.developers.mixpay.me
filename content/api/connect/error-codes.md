@@ -33,7 +33,6 @@ Global error response, example:
 | 10009 | Withdrawals are suspended temporarily due to system maintenance. If you have any questions, please contact customer service. |
 | 10010 | Insufficient balance of assets. |
 | 10011 | Parameter error |
-| 10032 | Unpaid. |
 | 10033 | The same user can be added only 3 times in 24 hours. |
 | 10034 | Price exception, please try again later. |
 | 10035 | The multisigId does not belong to the token. |
@@ -72,3 +71,4 @@ Global error response, example:
 | 40022 | TraceId does not exist. |
 | 40023 | Payee does not exist in Memo. |
 | 40024 | Wrong Amount paid. |
+
