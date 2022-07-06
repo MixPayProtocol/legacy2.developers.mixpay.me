@@ -31,18 +31,25 @@ curl -i -X GET -H "Content-Type: application/json" \
   "message":"",
   "data":[
     {
-      "name":"Bitcoin",
-      "symbol":"BTC",
-      "iconUrl":"https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
-      "assetId":"c6d0c728-2624-429b-8e0d-d9d19b6592fa",
-      "network":"Bitcoin",
-      "chainAsset":{
-        "id":"c6d0c728-2624-429b-8e0d-d9d19b6592fa",
-        "symbol":"BTC",
-        "name":"Bitcoin",
-        "iconUrl":"https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128"
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "iconUrl": "https://app.mixpay.me/fiats/c6d0c728-2624-429b-8e0d-d9d19b6592fa.png",
+      "assetId": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
+      "network": "Bitcoin",
+      // onChainSupported: bool, some assets may not support on-chain payment.
+      "onChainSupported": true,
+      // paymentAmount must not lower than this value
+      "minPaymentAmount": "0.0000005",
+      // paymentAmount must not greater than this value
+      "maxPaymentAmount": "0.50075062",
+      "chainAsset": {
+        "id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "iconUrl": "https://app.mixpay.me/fiats/c6d0c728-2624-429b-8e0d-d9d19b6592fa.png"
       }
-    }
+    },
+    ...
   ],
   "timestampMs":1645588240845
 }
