@@ -1,3 +1,7 @@
+---
+summary: It takes only three steps to integrate MixPay into the Online Payment.
+---
+
 ## Introduction
 
 Before you get started, all you need to know is that it takes only three steps to integrate MixPay into the Online Payment. They are as follows.

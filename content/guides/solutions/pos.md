@@ -1,3 +1,7 @@
+---
+summary: Only three steps to integrate MixPay into the Point-of-Sale (PoS) system.
+---
+
 ## Introduction
 
 Before you get started, all you need to know is that it takes only three steps to integrate MixPay into the Point-of-Sale (PoS) system. They are as follows.

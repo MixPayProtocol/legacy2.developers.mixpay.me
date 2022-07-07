@@ -1,3 +1,6 @@
+---
+summary:  In this article will guide how to intergrate MixPay into your existing system.
+---
 
 Before you get started, please make sure you are familiar with MixPay and Mixin Messenger, and then you need to have a Mixin account. You need to search for `7000104220` in Mixin Messenger, click "Add bot" and open it. This bot is the best demo for this API. This article will explain to you how to use this API better by showing the features of MixPay.
 

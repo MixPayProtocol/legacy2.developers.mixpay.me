@@ -1,3 +1,7 @@
+---
+summary: Payment assets only support cryptocurrency.
+---
+
 ## GET /setting/payment_assets
 
 Payment assets only support cryptocurrency.

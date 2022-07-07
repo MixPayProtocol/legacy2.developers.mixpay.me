@@ -1,3 +1,6 @@
+---
+summary: MixPay is a decentralized crypto payments service platform built on Mixin Network.
+---
 
 :::note
 MixPay, Payment for Web3.

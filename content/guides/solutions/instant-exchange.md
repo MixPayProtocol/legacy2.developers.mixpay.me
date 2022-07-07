@@ -1,3 +1,7 @@
+---
+summary:  Our MixPay API has an instant exchange feature, it allows users to have an amazingly smooth experience accepting whatever crypto they’ve set their eyes on.
+---
+
 ## Introduction
 
 Our MixPay API has an instant exchange feature, it allows users to have an amazingly smooth experience accepting whatever crypto they’ve set their eyes on.

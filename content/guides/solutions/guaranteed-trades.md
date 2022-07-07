@@ -1,3 +1,7 @@
+---
+summary:  It takes only four steps to integrate MixPay in your Guaranteed Trades system.
+---
+
 ## Introduction
 
 Before you get started, all you need to know is that it takes only four steps to integrate MixPay in your Guaranteed Trades system. They are as follows.
