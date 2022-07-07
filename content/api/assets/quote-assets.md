@@ -1,3 +1,7 @@
+---
+summary: setting/quote_assets API list all supported assets you can use as the payment's quote assets.
+---
+
 ## GET /setting/quote_assets
 
 Quote assets support cryptocurrency and fiat currency.

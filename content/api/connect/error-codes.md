@@ -1,3 +1,7 @@
+---
+summary:  MixPay API response error code.
+---
+
 ### Global error response
 
 Global error response, example:

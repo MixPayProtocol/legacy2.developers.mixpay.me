@@ -1,3 +1,7 @@
+---
+summary:  MixPay API for get the estimated price and the estimated amount of the transaction.
+---
+
 ## GET /payments_estimated
 
 Get the estimated price and the estimated amount of the transaction.

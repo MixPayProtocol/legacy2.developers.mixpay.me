@@ -1,3 +1,7 @@
+---
+summary:  Find out how crypto payment gateways work and how you can accept crypto payments with MixPay API.
+---
+
 MixPay is decentralized and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of quote, payment and settlement. MixPay supports three settlement modes at the same time, normal user, robot, and multi-signature group.
 
 ## Getting Started

@@ -1,3 +1,7 @@
+---
+summary:  MixPay API for creating a on-chain payment.
+---
+
 ## POST /payments
 
 MixPay also supports on-chain wallet payments.

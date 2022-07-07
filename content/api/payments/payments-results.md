@@ -1,3 +1,7 @@
+---
+summary:  MixPay API for getting a payment results.
+---
+
 ## GET /payments_result
 
 Get payment results.

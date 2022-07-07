@@ -1,3 +1,7 @@
+---
+summary:  MixPay API for Get Multisig Group Id
+---
+
 ## POST /multisig
 
 Get Multisig Group Id

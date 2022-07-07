@@ -1,3 +1,7 @@
+---
+summary:  MixPay payment link page for quickly accept crypto payments.
+---
+
 ## GET /pay
 
 You only need to set the amount and currency of the payment link, and MixPay will do the rest.

@@ -1,3 +1,7 @@
+---
+summary:  Decode MixPay payment's memo.
+---
+
 If you use Mixin API [GET /snapshots](https://developers.mixin.one/docs/api/transfer/snapshots), you can get the following response. The parameter Memo is sent by MixPay settings.
 
 

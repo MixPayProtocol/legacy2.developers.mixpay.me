@@ -1,3 +1,7 @@
+---
+summary:  MixPay API for creating a mixin payment.
+---
+
 ## POST /payments
 
 You can get the complete parameters to evoke [Mixin payment](https://developers.mixin.one/docs/schema#payment) from the api below to transfer assets.

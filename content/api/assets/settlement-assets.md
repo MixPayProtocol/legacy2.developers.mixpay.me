@@ -1,3 +1,7 @@
+---
+summary: setting/settlement_assets API list all supported assets you can use as the payment's settlement assets.
+---
+
 ## GET /setting/settlement_assets
 
 Settlement assets support cryptocurrency and fiat currency.

@@ -1,3 +1,7 @@
+---
+summary:  MixPay API for translating a Mixin ID into UUID for format.
+---
+
 ## GET /user/mixin_uuid/{mixin_id}
 
 Providing a Mixin ID, like `40053095`, will get back to your `a38ed284-5689-4fb9-8c2a-91fba5e32ce9`.
