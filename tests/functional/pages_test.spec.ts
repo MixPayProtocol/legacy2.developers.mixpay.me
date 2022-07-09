@@ -10,7 +10,7 @@ for (const category of Guides[0].categories) {
     test('display ' + url + ' page', async ({ client }) => {
       const response = await client.get(url)
       response.assertStatus(200)
-      response.assertTextIncludes('Payment for Web3 - MixPay')
+      response.assertTextIncludes('MixPay Developer Documents')
     })
   }
 }
@@ -23,7 +23,7 @@ for (const category of API[0].categories) {
     test('display ' + url + ' page', async ({ client }) => {
       const response = await client.get(url)
       response.assertStatus(200)
-      response.assertTextIncludes('Payment for Web3 - MixPay')
+      response.assertTextIncludes('MixPay API Reference')
     })
   }
 }
