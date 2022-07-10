@@ -21,24 +21,29 @@
         "name": "Integration",
         "docs": [
           {
+            "title": "Overview",
+            "permalink": "integration-verview",
+            "contentPath": "zh_CN/integration/integration-verview.md"
+          },
+          {
             "title": "Using Paylink",
-            "permalink": "assessts",
-            "contentPath": "assets/assssets.md"
+            "permalink": "using-paylink",
+            "contentPath": "zh_CN/integration/using-paylink.md"
           },
           {
             "title": "Using JS Plugin",
-            "permalink": "paymssent-assets",
-            "contentPath": "assets/payment-asssets.md"
+            "permalink": "using-js-plugin",
+            "contentPath": "zh_CN/integration/using-js-plugin.md"
           },
           {
             "title": "Using Raw API",
-            "permalink": "quotess-assets",
-            "contentPath": "assets/qusote-asssets.md"
+            "permalink": "using-raw-api",
+            "contentPath": "zh_CN/integration/using-raw-api.md"
           },
           {
             "title": "Shopify Plugin",
-            "permalink": "quotess-asssets",
-            "contentPath": "assets/qussote-asssets.md"
+            "permalink": "shopify-plugin",
+            "contentPath": "zh_CN/integration/shopify-plugin.md"
           }
         ]
       },
