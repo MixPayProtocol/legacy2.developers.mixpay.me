@@ -63,28 +63,33 @@
         ]
       },
       {
-        "name": "Payments",
+        "name": "Create Payment",
         "docs": [
           {
-            "title": "Pay Link",
+            "title": "Using Pay Link",
             "permalink": "payments/pay",
             "contentPath": "payments/pay.md"
           },
           {
-            "title": "One-time Payment",
-            "permalink": "payments/one-time-payment",
-            "contentPath": "payments/one-time-payment.md"
-          },
-          {
-            "title": "Accepting Payments",
+            "title": "Create a Mixin Payment",
             "permalink": "payments/accepting-payments",
             "contentPath": "payments/accepting-payments.md"
           },
           {
-            "title": "On-chain Payments",
+            "title": "Create an On-chain Payment",
             "permalink": "payments/onchain-payments",
             "contentPath": "payments/onchain-payments.md"
           },
+          {
+            "title": "Create an One-time Payment",
+            "permalink": "payments/one-time-payment",
+            "contentPath": "payments/one-time-payment.md"
+          }
+        ]
+      },
+      {
+        "name": "Payments",
+        "docs": [
           {
             "title": "Payments Results",
             "permalink": "payments/payments-results",
