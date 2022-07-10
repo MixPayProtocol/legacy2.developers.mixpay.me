@@ -13,7 +13,32 @@
           {
             "title": "Getting Started",
             "permalink": "getting-started",
-            "contentPath": "getting-started.md"
+            "contentPath": "zh_CN/getting-started.md"
+          }
+        ]
+      },
+      {
+        "name": "Integration",
+        "docs": [
+          {
+            "title": "Using Paylink",
+            "permalink": "assessts",
+            "contentPath": "assets/assssets.md"
+          },
+          {
+            "title": "Using JS Plugin",
+            "permalink": "paymssent-assets",
+            "contentPath": "assets/payment-asssets.md"
+          },
+          {
+            "title": "Using Raw API",
+            "permalink": "quotess-assets",
+            "contentPath": "assets/qusote-asssets.md"
+          },
+          {
+            "title": "Shopify Plugin",
+            "permalink": "quotess-asssets",
+            "contentPath": "assets/qussote-asssets.md"
           }
         ]
       },
