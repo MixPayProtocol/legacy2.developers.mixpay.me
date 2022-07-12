@@ -34,7 +34,7 @@ https://mixpay.me/pay
 | `settlementMemo` | optional | String |  maximum 200. A memo similar to Mixin Snapshots, this parameter you can customize. This parameter only takes effect when your settlementMethod is equal to mixin. |
 | `returnTo` | optional | String | After successful payment, the page will jump to returnTo URL. |
 | `failedReturnTo` | optional | String | After payment failure, the page will jump to failedReturnTo URL. |
-| `callbackUrl` | optional | String | After a payment is finish (either success or failure), MixPay will issue a POST request to this URL in our server side. For security reason, URL only support `https`.  |
+| `callbackUrl` | optional | String | After payment successfully, MixPay will issue a POST request to this URL on our server-side. For security reasons, URLs only support HTTPS.  |
 | `expiredTimestamp` | optional | int | Set a expired [timestamp](https://en.wikipedia.org/wiki/Unix_time). This value must greater than 10s, and less than 240min. After this time period the payment result `status` field will be mark as `failed`, and the `failureReason` will be `Payment overtime`. If you not setting this value, the payer can have a unlimit time to complete this payment. |
 
 ## Callback
