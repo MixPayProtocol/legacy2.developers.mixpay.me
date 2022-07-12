@@ -1,10 +1,10 @@
 ---
-summary:  MixPay API for get a payment detail.
+summary:  MixPay API for getting a payment detail.
 ---
 
 ## GET /payments_info
 
-Get the payments info.
+Get the payment info.
 
 ### Endpoint URL
 

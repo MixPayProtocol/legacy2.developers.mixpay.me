@@ -4,7 +4,7 @@ summary:  MixPay API for creating a mixin payment.
 
 ## POST /payments
 
-You can get the complete parameters to evoke [Mixin payment](https://developers.mixin.one/docs/schema#payment) from the api below to transfer assets.
+You can get the complete parameters to evoke [Mixin payment](https://developers.mixin.one/docs/schema#payment) from the API below to transfer assets.
 
 ## Endpoint URL
 
@@ -17,27 +17,27 @@ https://api.mixpay.me/v1/payments
 |  Param | Optional | Type | Description |
 | --- | --- | --- | --- |
 | `payeeId` | <span class="required">*required</span> | String | three settlement modes are supported, normal user, robot, and multisig group, so it is usually the Mixin UUID of a normal user or robot, and you can also specify the multisigId of a sub-account. |
-| `orderId` | <span class="required">*required</span> if no `traceId` | String | Unique in your system. String length **between 6-36**, must be letters, numbers, dashes and underscores and NOT space. `orderId` and `payeeId` makes a payment unique. |
-| `paymentAssetId` | <span class="required">*required</span> | String | assetId of payment cryptocurrency. |
-| `settlementAssetId` | <span class="required">*required</span> | String | assetId of settlement cryptocurrency. Settlement assets you prefer. |
+| `orderId` | <span class="required">*required</span> if no `traceId` | String | Unique in your system. String lengths **between 6-36** must be letters, numbers, dashes and underscores and NOT space. `orderId` and `payeeId` make a payment unique. |
+| `paymentAssetId` | <span class="required">*required</span> | String | `assetId` of payment cryptocurrency. |
+| `settlementAssetId` | <span class="required">*required</span> | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. |
 | `quoteAmount` | <span class="required">*required</span> | Numeric | Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USD |
-| `quoteAssetId` | <span class="required">*required</span> | String | assetId of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
+| `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
 | `traceId` | optional | String |  UUID, used to prevent double payment and checking the payment result. You should use `orderId` instead.  |
 | `clientId` | optional | String | UUID of client of the payment. |
-| `paymentAmount` | optional | Numeric | The quoteAmount parameter is invalid when paymentAmount is not null. |
-| `settlementMethod` | optional | String | Instant settlement wallet. This parameter has two values, mixin and mixpay, the default is mixin. |
+| `paymentAmount` | optional | Numeric | The `quoteAmount` parameter is invalid when `paymentAmount` is not null. |
+| `settlementMethod` | optional | String | Instant settlement wallet. This parameter has two values, `mixin` and `mixpay. The default is `mixin`. |
 | `remark` | optional | String | maximum 50. Payment remark viewable by the payee. |
 | `note` | optional | String | maximum 50. Payment note viewable by the payer. |
-| `settlementMemo` | optional | String | maximum 200. A memo similar to Mixin Snapshots, this parameter you can customize. This parameter only takes effect when your settlementMethod is equal to mixin. |
-| `returnTo` | optional | String | After successful payment, the URL page will want to redirect to. Useful when you in a browser JavaScript environment. |
-| `failedReturnTo` | optional | String | After payment failure, the URL page will want to redirect to. Useful when you in a browser JavaScript environment. |
+| `settlementMemo` | optional | String | maximum 200. A memo is similar to Mixin Snapshots, this parameter you can customize. This parameter only takes effect when your `settlementMethod` is equal to `mixin`. |
+| `returnTo` | optional | String | After successful payment, the URL page will want to redirect to. Useful when you are in a browser JavaScript environment. |
+| `failedReturnTo` | optional | String | After payment failure, the URL page will want to redirect to. Useful when you are in a browser JavaScript environment. |
 | `callbackUrl` | optional | String | After payment successfully, MixPay will issue a POST request to this URL on our server-side. For security reasons, URLs only support HTTPS.  |
-| `expiredTimestamp` | optional | int | Set a expired [timestamp](https://en.wikipedia.org/wiki/Unix_time). This value must greater than 10s, and less than 240min. After this time period the payment result `status` field will be mark as `failed`, and the `failureReason` will be `Payment overtime`. |
+| `expiredTimestamp` | optional | int | Set a expired [timestamp](https://en.wikipedia.org/wiki/Unix_time). This value must be greater than 10s and less than 240min. After this period, the payment result status field will be marked as `failed`, and the `failureReason` will be `Payment overtime`. If you are not setting this value, the payer can have unlimited time to complete this payment. |
 ## Callback
 
 As mentioned above, you can pass a `callbackUrl` parameter to this API. 
 
-After a payment is finish (either success or failure), MixPay will issue a POST request to this URL, with the following JSON content as a example:
+After payment successfully, MixPay will issue a POST request to this URL, with the following JSON content as an example:
 
 ```json
 {
@@ -47,15 +47,15 @@ After a payment is finish (either success or failure), MixPay will issue a POST 
 }
 ```
 
-**For security reason, we can not passing the payment result in this proccess.**
+**For security reasons, we can not pass the payment result in this process.**
 
-When your callback endpoint receive a call:
+When your callback endpoint receives a call:
 
-- First in your database look for the incoming `orderId` or `traceId` value. **This step is important, be careful anyone can post a fake value the your endpoint**;
-- If the previous step have a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
+- First, in your database, look for the incoming `orderId` or `traceId` value. **This step is essential, be careful anyone can post a fake value to your endpoint**;
+- If the previous step has a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
 - Only when the `status` filed is `success`, now you can safely mark your order as completed. 
 
-Your endpoint should return a HTTP status 200 with the following JSON data:
+Your endpoint should return an HTTP status 200 with the following JSON data:
 
 ```json
 {  
@@ -63,7 +63,7 @@ Your endpoint should return a HTTP status 200 with the following JSON data:
 }
 ```
 
-Anything `code` not equal to `SUCCESS`, we will see it as failure, then our server will retry at 0s/15s/15s/30s/180s/1800s/1800s/1800s/1800s/3600s, total 10 time。
+Anything `code` not equal to `SUCCESS`, we will see it as a failure, then our server will retry at 0s/15s/15s/30s/180s/1800s/1800s/1800s/1800s/3600s, a total 10 times。
 
 :::note
 You can use [postbin](https://www.toptal.com/developers/postbin/) to test it out.

@@ -17,8 +17,8 @@ https://api.mixpay.me/v1/payments_result
 |  Param | Optional | Type | Description |
 | --- | --- | --- | --- |
 | `traceId` | <span class="required">*required</span> if no `orderId` | String | Trace Id of payments. |
-| `orderId` | <span class="required">*required</span> if no `traceId` | String | Unique in your system. String length **between 6-36**, must be letters, numbers, dashes and underscores and NOT space. |
-| `payeeId` | <span class="required">*required</span> if has `orderId` | String | It's the same payeeId when you create a payment. `orderId` and `payeeId` makes a payment unique. |
+| `orderId` | <span class="required">*required</span> if no `traceId` | String | Unique in your system. String lengths **between 6-36**must be letters, numbers, dashes and underscores and NOT space. |
+| `payeeId` | <span class="required">*required</span> if has `orderId` | String | It's the same payeeId when you create a payment. `orderId` and `payeeId` make a payment unique. |
 
 ## Example request - GET payment results.
 
@@ -72,7 +72,7 @@ curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
 ```
 
 :::note
-This response status returns `unpaid`, `pending`(processing), `failed` and `success`, you can loop query with the `traceId`.
+This response status returns `unpaid`, `pending`(processing), `failed` and `success`. You can loop query with the `traceId`.
 :::
 
 ### Checking for failure
