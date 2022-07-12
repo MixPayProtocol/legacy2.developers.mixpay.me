@@ -30,11 +30,38 @@ https://mixpay.me/pay
 | `quoteAssetId` | optional | String |  assetId of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
 | `quoteAmount` | optional | Numeric | Amount of cryptocurrency received, if left blank, the user can enter manually. |
 | `remark` | optional | String |  maximum 50. Payment remark viewable by the payee. |
-| `expireSeconds` | optional | Numeric | minimum 60, maximum 172800. This parameter is invalid when the quote currency and the payment currency are not the same. |
 | `settlementMethod` | optional | String | Instant settlement wallet. This parameter has two values, mixin and mixpay, the default is mixin. |
 | `settlementMemo` | optional | String |  maximum 200. A memo similar to Mixin Snapshots, this parameter you can customize. This parameter only takes effect when your settlementMethod is equal to mixin. |
 | `returnTo` | optional | String | After successful payment, the page will jump to returnTo URL. |
 | `failedReturnTo` | optional | String | After payment failure, the page will jump to failedReturnTo URL. |
+| `callbackUrl` | optional | String | After a payment is finish (either success or failure), MixPay will issue a POST request to this URL in our server side. For security reason, URL only support `https`.  |
+| `expiredTimestamp` | optional | int | Set a expired [timestamp](https://en.wikipedia.org/wiki/Unix_time). This value must greater than 10s, and less than 240min. After this time period the payment result `status` field will be mark as `failed`, and the `failureReason` will be `Payment overtime`. If you not setting this value, the payer can have a unlimit time to complete this payment. |
+
+## Callback
+
+As mentioned above, you can pass a `callbackUrl` parameter to this API. 
+
+After a payment is finish (either success or failure), MixPay will issue a POST request to this URL, with the following JSON content as a example:
+
+```json
+{
+  "orderId": "xxxxxxxxxxxx",
+  "traceId": "xxxxxxxxxxxx",
+  "payeeId": "xxxxxxxxxxxx"
+}
+```
+
+**For security reason, we can not passing the payment result in this proccess.**
+
+When your callback endpoint receive a call:
+
+- First in your database look for the incoming `orderId` or `traceId` value. **This step is important, be careful anyone can post a fake value the your endpoint**;
+- If the previous step have a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
+- Only when the `status` filed is `success`, now you can safely mark your order as completed. 
+
+:::note
+You can use [postbin](https://www.toptal.com/developers/postbin/) to test it out.
+:::
 
 ### Example request - Get Payment Link
 

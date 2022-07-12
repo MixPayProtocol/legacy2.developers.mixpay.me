@@ -6,13 +6,13 @@ summary:  MixPay API for creating a mixin payment.
 
 You can get the complete parameters to evoke [Mixin payment](https://developers.mixin.one/docs/schema#payment) from the api below to transfer assets.
 
-### Endpoint URL
+## Endpoint URL
 
 ```
 https://api.mixpay.me/v1/payments
 ```
 
-### Parameters
+## Parameters
 
 |  Param | Optional | Type | Description |
 | --- | --- | --- | --- |
@@ -25,19 +25,46 @@ https://api.mixpay.me/v1/payments
 | `traceId` | optional | String |  UUID, used to prevent double payment and checking the payment result. You should use `orderId` instead.  |
 | `clientId` | optional | String | UUID of client of the payment. |
 | `paymentAmount` | optional | Numeric | The quoteAmount parameter is invalid when paymentAmount is not null. |
-| `expireSeconds` | optional | Numeric | minimum 60, maximum 172800. This parameter is invalid when the quote currency and the payment currency are not the same. |
 | `settlementMethod` | optional | String | Instant settlement wallet. This parameter has two values, mixin and mixpay, the default is mixin. |
 | `remark` | optional | String | maximum 50. Payment remark viewable by the payee. |
 | `note` | optional | String | maximum 50. Payment note viewable by the payer. |
 | `settlementMemo` | optional | String | maximum 200. A memo similar to Mixin Snapshots, this parameter you can customize. This parameter only takes effect when your settlementMethod is equal to mixin. |
 | `returnTo` | optional | String | After successful payment, the URL page will want to redirect to. Useful when you in a browser JavaScript environment. |
 | `failedReturnTo` | optional | String | After payment failure, the URL page will want to redirect to. Useful when you in a browser JavaScript environment. |
+| `callbackUrl` | optional | String | After a payment is finish (either success or failure), MixPay will issue a POST request to this URL in our server side. For security reason, URL only support `https`.  |
+| `expiredTimestamp` | optional | int | Set a expired [timestamp](https://en.wikipedia.org/wiki/Unix_time). This value must greater than 10s, and less than 240min. After this time period the payment result `status` field will be mark as `failed`, and the `failureReason` will be `Payment overtime`. |
 
-##### INFO
+## Callback
+
+As mentioned above, you can pass a `callbackUrl` parameter to this API. 
+
+After a payment is finish (either success or failure), MixPay will issue a POST request to this URL, with the following JSON content as a example:
+
+```json
+{
+  "orderId": "xxxxxxxxxxxx",
+  "traceId": "xxxxxxxxxxxx",
+  "payeeId": "xxxxxxxxxxxx"
+}
+```
+
+**For security reason, we can not passing the payment result in this proccess.**
+
+When your callback endpoint receive a call:
+
+- First in your database look for the incoming `orderId` or `traceId` value. **This step is important, be careful anyone can post a fake value the your endpoint**;
+- If the previous step have a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
+- Only when the `status` filed is `success`, now you can safely mark your order as completed. 
+
+:::note
+You can use [postbin](https://www.toptal.com/developers/postbin/) to test it out.
+:::
+
+#### INFO
 
 `settlementMemo` parameter explanations: If you use Mixin API like [GET /snapshots](https://developers.mixin.one/docs/api/transfer/snapshots), you can find the `memo` in this response. This memo is the settlementMemo set by you. If you don't use this parameter, the specification of the memo can be found [here](https://developers.mixpay.me/api/memo).
 
-### Example request - Accepting Payments
+## Example request - Accepting Payments
 
 ```bash
 curl -i -X POST https://api.mixpay.me/v1/payments \
