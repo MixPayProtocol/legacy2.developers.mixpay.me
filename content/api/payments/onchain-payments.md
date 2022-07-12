@@ -57,9 +57,20 @@ When your callback endpoint receive a call:
 - If the previous step have a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
 - Only when the `status` filed is `success`, now you can safely mark your order as completed. 
 
+Your endpoint should return a HTTP status 200 with the following JSON data:
+
+```json
+{  
+  "code": "SUCCESS"
+}
+```
+
+Anything `code` not equal to `SUCCESS`, we will see it as failure, then our server will retry at 0s/15s/15s/30s/180s/1800s/1800s/1800s/1800s/3600s, total 10 time。
+
 :::note
 You can use [postbin](https://www.toptal.com/developers/postbin/) to test it out.
 :::
+
 
 ##### INFO
 

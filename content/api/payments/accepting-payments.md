@@ -33,7 +33,6 @@ https://api.mixpay.me/v1/payments
 | `failedReturnTo` | optional | String | After payment failure, the URL page will want to redirect to. Useful when you in a browser JavaScript environment. |
 | `callbackUrl` | optional | String | After a payment is finish (either success or failure), MixPay will issue a POST request to this URL in our server side. For security reason, URL only support `https`.  |
 | `expiredTimestamp` | optional | int | Set a expired [timestamp](https://en.wikipedia.org/wiki/Unix_time). This value must greater than 10s, and less than 240min. After this time period the payment result `status` field will be mark as `failed`, and the `failureReason` will be `Payment overtime`. |
-
 ## Callback
 
 As mentioned above, you can pass a `callbackUrl` parameter to this API. 
@@ -55,6 +54,16 @@ When your callback endpoint receive a call:
 - First in your database look for the incoming `orderId` or `traceId` value. **This step is important, be careful anyone can post a fake value the your endpoint**;
 - If the previous step have a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
 - Only when the `status` filed is `success`, now you can safely mark your order as completed. 
+
+Your endpoint should return a HTTP status 200 with the following JSON data:
+
+```json
+{  
+  "code": "SUCCESS"
+}
+```
+
+Anything `code` not equal to `SUCCESS`, we will see it as failure, then our server will retry at 0s/15s/15s/30s/180s/1800s/1800s/1800s/1800s/3600s, total 10 time。
 
 :::note
 You can use [postbin](https://www.toptal.com/developers/postbin/) to test it out.
