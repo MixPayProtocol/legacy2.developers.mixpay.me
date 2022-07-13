@@ -1,24 +1,78 @@
 
-## 说明
 
-这篇文章，除了帮助你做好集成 MixPay 支付之前的准备，还讲解了各种集成方式的使用场景，方便开发者决策哪种方式适合自己。
+## MixPay Payment flow
 
-## 三种资产类型
+To get started, let's have a bird's eyes view of the MixPay Payment flow: 
 
-- Pyament Assets —— 用户可用以支付的资产
-- Quote Assets —— 计价的资产
-- Settlement Assets —— 结算的资产
+1.  The customer confirms the order details.
+2.  The merchant creates orders and asks customers to pay (The checkout page).
+3.  MixPay is waiting for payment.
+4.  The merchant queries payment results and shows the result to the customer.
 
-说明一下这些资产之间的关系。
+![](https://developers.mixpay.me/images/qmhxunt.png)
 
-## 收款人 ID
+## Where does the money go?
 
-收款人 ID ，可以通过『这里加下 API 的链接』，来获取到。
+When you received the customer's payment, you have two options to transfer the crypto assets into: 
 
-## 支付场景
+1. Mixin Wallet (default) ;
+2. MixPay Wallet.
 
-- Web Page
-- Mobile App
-- POS 机
-- 电商网站
+
+
+Through the API of MixPay, the crypto paid by the user is **settled directly to your Mixin bot, MixPay user, or Mixin Wallet.**
+
+
+
+## Where to view all the transactions?
+
+Open the MixPay App in the Mixin App, click the "Payment History" entry like below:
+
+![](https://developers.mixpay.me/images/payment_history.png)
+
+## Three types of assets
+
+- [Payment Assets](https://developers.mixpay.me/docs/api/assets/payment-assets) - Used when you create a payment;
+- [Quote Assets](https://developers.mixpay.me/docs/api/assets/quote-assets) - Used when you calculate the total payment amount and show it to the customers.
+- [Settlement Assets](https://developers.mixpay.me/docs/api/assets/settlement-assets) - Used when you setting the payee settlement assets;
+
+## Three type of account
+
+MixPay supports three type of account: 
+
+- User account - Normal Mixin & MixPay user, the account that you created using mobile phone number. ID of MixPay user is equal to Mixin ID.
+- Multi-Signature account -  This is suitable for if your store is owned by mulitple people. Please refer to thoes articles:
+  -  [How to create a multi-signature account？](https://help.mixpay.me/tutorials/creat-a-multi-signature-account) . 
+  - [How to use multi-signature group](https://help.mixpay.me/tutorials/how-to-use-multi-signature-group?from_search=93093843)
+  - [How to use multi-signature groups and withdrawals?](https://help.mixpay.me/tutorials/how-to-use-multi-signature-groups-and-withdrawals)
+
+- Mixin Robot account - [Mixin's Messenger Bot](https://developers.mixin.one/docs/dapp/mixin-applications#messenger-bot), it's programmable, thus is more flexible, this is for more advanced users.
+
+If you don't know how to choce, you can go with the "User account", or [contact our customer service](https://developers.mixpay.me/guides/contact-customer-service).
+
+## Payee ID
+
+`payeeId` is the account's UUID.
+
+This UUID is very important and **determines the destination of the money received.** 
+
+There are two ways of getting the payee's UUID: 
+
+- You can use this bot (7000101422) to get the Mixin User/Robot UUID, just send the Mixin ID in the chat window to the bot, and it will reply back with the corresponding UUID. It's simple and no programming is required.
+
+- Also if the user UUID you want to acquire is a MixPay user, you can easily get this UUID via [Get Mixin UUID API](https://developers.mixpay.me/api/users/get-mixin-uuid) .
+
+
+
+## How to integrate? 
+
+There are several ways you can integrate MixPay to accept crypto payments:
+
+1. Paylink -  MixPay hosted web page, all user interaction happened on this page, you can use it as a "Pay with Crypto" button.
+2. JS Plugin -  Like Paylink to handle all user payment relative interaction, but on your own web page, you can have more control over it.
+3. Raw API call - Above to method are in the browser, if you are in the circumstance that can't use the browser, maybe this is your choice.
+4. Shopify Plugin.
+5. WordPress  WooCommerce Plugin.
+
+Here is just a brief of the integration method available, for more detailed instructions, please visit the doc entry at the left menu.
 
