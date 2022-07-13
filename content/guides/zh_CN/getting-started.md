@@ -1,24 +1,44 @@
 ---
-summary:  In this article will guide how to intergrate MixPay into your existing system.
+summary:  In this article will guide how to integrate MixPay into your existing system.
 ---
 
-## 简介
+This article is your first step to integrating MixPay crypto payment gateway into your existing system.
 
-在您开始集成 MixPay 支付前，请先阅读此文章。
+## Mixin & MixPay
 
-## Mixin App
+First of all, let's get familiar with Mixin & MixPay.
 
-### 1. 什么是 Mixin App？
+### 1. Whit is Mixin?
 
-### 2. Mixin 与 MixPay 的关系？
+In general,  [Mixin](https://mixin.one/)  consist of two-part:
 
-### 3. 如何下载 Mixin App？
+- Mixin Network
+- Mixin Messenger App
 
-## MixPay Robot
+### 2. What is Mixin Network?
 
-### 1. 什么是 MixPay？
+A lightning-fast and decentralized network for transferring digital assets.
 
-### 2. 使用 MixPay Robot
+You can see it as a blockchain that handles all the payment transactions.
+
+### 3. What is Mixin App?
+
+Most of the time, we refer Mixin App as the Mixin Messenger App.
+
+Mixin App is an open source **cryptocurrency wallet** with real time messaging.
+
+
+Mixin Network is an open network, it's open to the developers at both Kernel (aka, the Mainnet) and Mixin API levels.
+
+According to the business needs and requirements, developers can choose the appropriate way to develop their dApps, chains, and any applications based on Mixin Network.
+
+### 2. Mixin & MixPay?
+
+### 3. How to install Mixin App?
+
+### 4. Using MixPay
+
+
 
 
 ## 流程讲解

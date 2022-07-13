@@ -101,6 +101,12 @@
         "name": "Help",
         "docs": [
           {
+            "title": "FAQ",
+            "permalink": "faq",
+            "contentPath": "help/faq.md"
+          },
+          {
+
             "title": "Contact Customer Service",
             "permalink": "contact-customer-service",
             "contentPath": "help/contact-customer-service.md"
