@@ -10,6 +10,13 @@ Settlement assets support cryptocurrencies and fiat currencies. And the detailed
 
 ### **Cryptocurrencies**
 
+
+:::warning
+The following is just an example list, the assets support list changes over time, and most of the time it will be outdated. 
+
+Please always use the [settlement-assets API](https://developers.mixpay.me/api/assets/settlement-assets) to get assets' UUID and check for all supported assets.
+:::
+
 | Currency | Symbol | UUID | Network |
 | --- | --- | :-- | --- |
 | USD Coin | USDC | 9b180ab6-6abe-3dc0-a13f-04169eb34bfa | Ethereum |
@@ -24,6 +31,17 @@ Settlement assets support cryptocurrencies and fiat currencies. And the detailed
 | Meta AED | mAED | b5289c48-ec3a-3cdb-b2c4-0913d1812cd5 | Ethereum |
 
 ### **Fiat Currencies**
+
+
+
+
+
+:::warning
+If you want to accept Fiat currencies as your settlement currency or want more more supported Fiat currencies, you need to [contact our customer service](https://developers.mixpay.me/guides/contact-customer-service) .
+
+:::
+
+
 
 | Currency | IOS Code |
 | :-- | --- |

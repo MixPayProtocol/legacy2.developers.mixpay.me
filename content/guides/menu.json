@@ -23,27 +23,27 @@
           {
             "title": "Overview",
             "permalink": "integration-verview",
-            "contentPath": "zh_CN/integration/integration-verview.md"
+            "contentPath": "integration/integration-verview.md"
           },
           {
             "title": "Using Paylink",
             "permalink": "using-paylink",
-            "contentPath": "zh_CN/integration/using-paylink.md"
+            "contentPath": "integration/using-paylink.md"
           },
           {
             "title": "Using JS Plugin",
             "permalink": "using-js-plugin",
-            "contentPath": "zh_CN/integration/using-js-plugin.md"
+            "contentPath": "integration/using-js-plugin.md"
           },
           {
             "title": "Using Raw API",
             "permalink": "using-raw-api",
-            "contentPath": "zh_CN/integration/using-raw-api.md"
+            "contentPath": "integration/using-raw-api.md"
           },
           {
             "title": "Shopify Plugin",
             "permalink": "shopify-plugin",
-            "contentPath": "zh_CN/integration/shopify-plugin.md"
+            "contentPath": "integration/shopify-plugin.md"
           }
         ]
       },
@@ -94,6 +94,16 @@
             "title": "Instant Exchange",
             "permalink": "instant-exchange",
             "contentPath": "solutions/instant-exchange.md"
+          }
+        ]
+      },
+      {
+        "name": "Help",
+        "docs": [
+          {
+            "title": "Contact Customer Service",
+            "permalink": "contact-customer-service",
+            "contentPath": "help/contact-customer-service.md"
           }
         ]
       }

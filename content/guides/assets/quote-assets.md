@@ -11,6 +11,12 @@ Quote assets support cryptocurrencies and fiat currencies. And the detailed info
 
 ### **Cryptocurrencies**
 
+:::warning
+The following is just an example list, the assets support list changes over time, and most of the time it will be outdated. 
+
+Please always use the [quote-assets API](https://developers.mixpay.me/api/assets/quote-assets) to get assets' UUID and check for all supported assets.
+:::
+
 | Currency | Symbol | UUID | Network |
 | --- | --- | :-- | --- |
 | USD Coin | USDC | 9b180ab6-6abe-3dc0-a13f-04169eb34bfa | Ethereum |
@@ -24,6 +30,10 @@ Quote assets support cryptocurrencies and fiat currencies. And the detailed info
 | Meta AED | mAED | b5289c48-ec3a-3cdb-b2c4-0913d1812cd5 | Ethereum |
 
 ### **Fiat Currencies**
+
+
+
+
 
 | Currency | IOS Code |
 | :-- | --- |
