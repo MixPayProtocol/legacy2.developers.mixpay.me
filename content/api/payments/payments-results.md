@@ -6,9 +6,13 @@ summary:  MixPay API for getting a payment results.
 
 Get payment results.
 
+:::warning
+For security best practice, you **should not** trust the client side application for getting the payment result. Always make sure to call this API in your server side, to make sure the payment result is 100% correct.
+:::
+
 ## Endpoint URL
 
-```
+```bash
 https://api.mixpay.me/v1/payments_result
 ```
 

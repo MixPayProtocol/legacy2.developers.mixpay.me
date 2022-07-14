@@ -4,7 +4,7 @@ You can use our open-source [JavaScript plugin](https://github.com/MixPayHQ/mixp
 
 ## Online Demo
 
-![](/images/js-plugin-popup.png)
+![](https://developers.mixpay.me/images/js-plugin-popup.png)
 
 - Real-time Demo: https://mixpay.me/plugins/payment.html
 - Source code of the Demo: https://github.com/MixPayHQ/mixpayjs/tree/master/docs
@@ -184,30 +184,36 @@ const mixpay = new MixPay(element, {
 
 ## Instance properties
 
-### payments
+### `payments`
 
 the infomation of the payment you create.
 
-### result
+### `result`
 
 the result infomation of the your payment;
 
 ## Instance Methods
 
-### destory()
+### `show()` and `hide()`
 
-remove the modal/element and events from document
+show/hide the modal/popup, if `isModal` is `true`.
 
-### show()
-### hide()
 
-show/hide the modal/popup, if `isModal` is `true`
+### `destory()`
+
+Remove the modal/element and events from document.
 
 ## Global Methods
 
-### newUUID()
+### `newUUID()`
 
-create a random UUID for `clientId` and `traceId`
+create a random UUID for `clientId` and `traceId`.
+
+## How to customize the UI?
+
+You can customize the UI through `--mixpay` parent CSS class. It acts like a namespace, will not messing with your website style.
+
+![Using CSS class to customize the UI](https://developers.mixpay.me/images/js-plugin-class.png)
 
 ## Resources
 
