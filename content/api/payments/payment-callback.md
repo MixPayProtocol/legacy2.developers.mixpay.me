@@ -1,6 +1,8 @@
 
 When creating a payment, you can pass a `callbackUrl` parameter to the API. 
 
+`callbackUrl` only supports HTTPS and has to be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.ASP).
+
 :::warning
 Callback only happens when MixPay successfully received the customer's payment.
 :::
