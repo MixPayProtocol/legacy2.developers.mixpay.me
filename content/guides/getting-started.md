@@ -10,7 +10,7 @@ First of all, let's get familiar with Mixin & MixPay.
 
 ### 1. Whit is Mixin?
 
-In general,  [Mixin consists of two-part:
+In general, [Mixin](https://mixin.one/) consists of two-part:
 
 - Mixin Network
 - Mixin Messenger App
@@ -29,7 +29,7 @@ Mixin App is an open-source **cryptocurrency wallet**. Mixin App also has a real
 
 ### 4. Mixin & MixPay?
 
-MixPay uses the Mixin App [Messenger Bot](https://developers.mixin.one/docs/dapp/mixin-applications#messenger-bot) to construct the UI, which is an application inside Mixin App. 
+MixPay uses the Mixin App [Messenger Bot](https://developers.mixin.one/docs/dapp/mixin-applications#messenger-bot) to construct the UI, you can think of it as an application inside Mixin App. 
 
 On the server-side, MixPay leverage the [Mixin Network](https://developers.mixin.one/docs/mainnet/overview) to transfer crypto-assets.
 

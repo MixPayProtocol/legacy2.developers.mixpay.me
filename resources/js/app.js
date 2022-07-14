@@ -166,6 +166,8 @@ Alpine.data('tocMenu', function () {
       anchors.forEach((link) => {
         link.onclick = function (e) {
           e.preventDefault();
+          history.pushState({}, '', link.href);
+
           anchors.forEach((anchor) => anchor.classList.remove('up-current'))
           link.classList.add('up-current')
 
