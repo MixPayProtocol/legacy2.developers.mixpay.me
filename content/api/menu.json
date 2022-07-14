@@ -84,6 +84,11 @@
             "title": "Create an One-time Payment",
             "permalink": "payments/one-time-payment",
             "contentPath": "payments/one-time-payment.md"
+          },
+          {
+            "title": "Payment Callback",
+            "permalink": "payments/payment-callback",
+            "contentPath": "payments/payment-callback.md"
           }
         ]
       },
