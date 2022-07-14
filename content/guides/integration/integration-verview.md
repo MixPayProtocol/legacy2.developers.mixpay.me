@@ -68,11 +68,11 @@ There are two ways of getting the payee's UUID:
 
 There are several ways you can integrate MixPay to accept crypto payments:
 
-1. Paylink -  MixPay hosted web page, all user interaction happened on this page, you can use it as a "Pay with Crypto" button.
-2. JS Plugin -  Like Paylink to handle all user payment relative interaction, but on your own web page, you can have more control over it.
-3. Raw API call - Above to method are in the browser, if you are in the circumstance that can't use the browser, maybe this is your choice.
-4. Shopify Plugin.
-5. WordPress  WooCommerce Plugin.
+1. [Paylink](https://developers.mixpay.me/guides/using-paylink) -  MixPay hosted web page, all user interaction happened on this page, you can use it as a "Pay with Crypto" button.
+2. [JS Plugin](https://developers.mixpay.me/guides/shopify-plugin) -  Like Paylink to handle all user payment relative interaction, but on your own web page, you can have more control over it.
+3. [Raw API call](https://developers.mixpay.me/guides/using-raw-api) - Above to method are in the browser, if you are in the circumstance that can't use the browser, maybe this is your choice.
+4. [Shopify Plugin](https://developers.mixpay.me/guides/shopify-plugin).
+5. WordPress WooCommerce Plugin (Work in proccess...).
 
 Here is just a brief of the integration method available, for more detailed instructions, please visit the doc entry at the left menu.
 
