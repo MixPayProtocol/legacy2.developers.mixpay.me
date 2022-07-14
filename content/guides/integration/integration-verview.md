@@ -28,7 +28,7 @@ Through the API of MixPay, the crypto paid by the user is **settled directly to 
 
 Open the MixPay App in the Mixin App, click the "Payment History" entry like below:
 
-![](https://developers.mixpay.me/images/payment_history.png)
+![](https://developers.mixpay.me/images/payment-history-entry.png)
 
 ## Three types of assets
 
