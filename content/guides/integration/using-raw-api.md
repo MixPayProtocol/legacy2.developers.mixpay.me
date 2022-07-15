@@ -1,4 +1,8 @@
-This method is the most flexible way to make a payment.
+---
+summary:  Using raw API is the most flexible way to create a MixPay payment.
+---
+
+This method is the most flexible way to create a MixPay payment.
 
 It's suitable for scenarios that can not use a browser, such as the Mobile Native App.
 
@@ -8,7 +12,6 @@ It's suitable for scenarios that can not use a browser, such as the Mobile Nativ
 When a customer makes a purchase, on your App check-out page, show a "Pay with Crypto" button. When the customer clicks the button, you should construct an App view like our [MixPay payment page](https://mixpay.me/pay?payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9&settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa&quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5&quoteAmount=10&orderId=product1000432&returnTo=the_customer_order_payment_url_on_your_site)
 
 ![Request for payment view](https://developers.mixpay.me/images/pay-with-mixpay-iphone.png)
-
 
 1. In this view:
     1. Using [Quote Assets ](https://developers.mixpay.me/api/assets/quote-assets)API to fetch the price in any supported cryptocurrency;

@@ -1,6 +1,10 @@
-
+---
+summary:  MixPay API for creating a one-time payment.
+---
 
 You can use our open-source [JavaScript plugin](https://github.com/MixPayHQ/mixpayjs) to support crypto payment on your web page.
+
+With this method, your customer will be able to complete the payment without leaving your website
 
 ## Online Demo
 
@@ -24,13 +28,12 @@ The disadvantage of the JS Plugin is when MixPay new feature is added, you have 
 The JS plugin source code repo is [https://github.com/MixPayHQ/mixpayjs](https://github.com/MixPayHQ/mixpayjs).
 
 ```bash
-├── dist - Prodction ready code.
+├── dist - Production ready code.
 ├── example - Example of the JS Plugin.
 └── src - Source code of the JS Plugin.
 ```
 
-
-`dist` file explain:
+`dist` file explains:
 
 ```bash
 dist/

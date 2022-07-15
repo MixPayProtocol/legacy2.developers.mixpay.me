@@ -1,3 +1,6 @@
+---
+summary:  When creating a payment, you can pass a `callbackUrl` parameter to the MixPay API. 
+---
 
 When creating a payment, you can pass a `callbackUrl` parameter to the API. 
 

@@ -2,7 +2,7 @@
 summary:  In this article will guide how to integrate MixPay into your existing system.
 ---
 
-This article is your first step to integrating MixPay crypto payment gateway into your existing system.
+This article will show you the MixPay ecosystem. Get you to warn up for integrating MixPay crypto payment gateway into your existing system.
 
 ## Mixin & MixPay
 
@@ -25,7 +25,7 @@ You can see it as a blockchain that handles all the payment transactions.
 
 Most of the time, we refer Mixin App as the Mixin Messenger App.
 
-Mixin App is an open-source **cryptocurrency wallet**. Mixin App also has a real-time messaging feature, like WhatsApp.
+Apart from its real-time messaging feature App, Mixin is also an open-source **cryptocurrency wallet**. 
 
 ### 4. Mixin & MixPay?
 

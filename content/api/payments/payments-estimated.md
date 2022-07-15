@@ -6,6 +6,8 @@ summary:  MixPay API to get the estimated price and the estimated amount of the 
 
 Get the estimated price and the estimated amount of the transaction.
 
+This API is used to calculate the total amount that a customer has to pay and show it for the customer to confirm.
+
 ### Endpoint URL
 
 ```

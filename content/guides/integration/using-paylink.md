@@ -1,4 +1,6 @@
-
+---
+summary:  You can use our MixPay payment page to create a MixPay payment. Paylink is the most convenient way of integrating MixPay.
+---
 
 You can use our MixPay payment page to create a MixPay payment. Paylink is the most convenient way of integrating MixPay.
 
@@ -29,7 +31,7 @@ When customers are on the checkout page, provide a "Pay with Crypto" button (wit
 
 Below is how to construct the URL parameters, according to the example URL above: 
 
-```
+```bash
 payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9
 settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa
 quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5

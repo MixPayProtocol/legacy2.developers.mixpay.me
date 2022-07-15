@@ -1,4 +1,6 @@
-
+---
+summary:  MixPay Shopify Plugin for accept crypto payments.
+---
 
 Please refer to this article - [MixPay Shopify Plugin Deployment Tutorial](https://help.mixpay.me/en_US/plugins/mixpay-shopify-plugin-deployment-tutorial).
 
