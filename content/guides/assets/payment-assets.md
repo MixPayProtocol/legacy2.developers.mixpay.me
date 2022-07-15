@@ -1,17 +1,17 @@
 ---
-summary:  Payment assets just support cryptocurrencies right now.
+summary:  Payment assets support cryptocurrencies right now.
 ---
 
-MixPay is decentralized and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of quote, payment and settlement. MixPay supports three settlement modes at the same time, normal user, robot, and multi-signature group.
+MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of the quote, payment and settlement. MixPay supports three settlement modes simultaneously: regular user, robot, and multi-signature group.
 
 ## Payment Assets List
 
-Payment assets just support cryptocurrencies right now. And the detailed information about payment assets, you can refer to this [payment-assets api](https://developers.mixpay.me/api/assets/payment-assets).
+Payment assets support cryptocurrencies right now. And the detailed information about payment assets, you can refer to this [payment-assets API](https://developers.mixpay.me/api/assets/payment-assets).
 
 ### **Cryptocurrencies:**
 
 :::warning
-The following is just an example list, the assets support list changes over time, and most of the time it will be outdated. 
+The following is just an example list, the assets support list changes over time, and most of the time, it will be outdated. 
 
 Please always use the [payment-assets API](https://developers.mixpay.me/api/assets/payment-assets) to get assets' UUID and check for all supported assets.
 :::

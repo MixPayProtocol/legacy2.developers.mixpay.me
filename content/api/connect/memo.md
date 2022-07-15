@@ -2,7 +2,7 @@
 summary:  Decode MixPay payment's memo.
 ---
 
-If you use Mixin API [GET /snapshots](https://developers.mixin.one/docs/api/transfer/snapshots), you can get the following response. The parameter Memo is sent by MixPay settings.
+If you use Mixin API [GET /snapshots](https://developers.mixin.one/docs/api/transfer/snapshots), you can get the following response. MixPay settings send the parameter Memo.
 
 
 ```json
@@ -26,7 +26,7 @@ If you use Mixin API [GET /snapshots](https://developers.mixin.one/docs/api/tra
 }
 ```
 
-Parse the parameters in the response memo via `base64_decode`, you can get the original information.
+Parse the parameters in the response memo via `base64_decode`; you can get the original information.
 
 ```json
 // title: Response

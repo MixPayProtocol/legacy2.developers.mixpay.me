@@ -4,7 +4,7 @@ summary:  MixPay API for creating a one-time payment.
 
 You can use our open-source [JavaScript plugin](https://github.com/MixPayHQ/mixpayjs) to support crypto payment on your web page.
 
-With this method, your customer will be able to complete the payment without leaving your website
+This method lets your customer complete the payment without leaving your website.
 
 ## Online Demo
 
@@ -15,13 +15,13 @@ With this method, your customer will be able to complete the payment without lea
 
 ## JS Plugin vs Paylink
 
-Compare to Paylink, MixPay JS plugin is running on your own page, you can have more control over it. For example:
+Compared to Paylink, the MixPay JS plugin runs on your page; you can have more control over it. For example:
 
-- Customize the UI;
-- Use the plugin's callback function or `hide()`  and `show()` method to customize the logic.
+- Customise the UI;
+- Use the plugin's callback function or `hide()`  and `show()` method to customise the logic.
 
 
-The disadvantage of the JS Plugin is when MixPay new feature is added, you have to manually update the JS plugin.
+The disadvantage of the JS Plugin is that when MixPay new feature is added, you must manually update the JS plugin.
 
 ## Source Code
 
@@ -76,7 +76,7 @@ new MixPay(element, options);
   - Default: `document.body`
 - options
   - Type: `Object`
-  - The options for payment. Check out the available [options](#options)
+  - The options for payment. Check out the available [options.](#options)
 
 ### Example
 
@@ -189,22 +189,22 @@ const mixpay = new MixPay(element, {
 
 ### `payments`
 
-the infomation of the payment you create.
+The information of the payment you create.
 
 ### `result`
 
-the result infomation of the your payment;
+the result information of the your payment;
 
 ## Instance Methods
 
 ### `show()` and `hide()`
 
-show/hide the modal/popup, if `isModal` is `true`.
+Show/hide the modal/popup if `isModal` is `true`.
 
 
 ### `destory()`
 
-Remove the modal/element and events from document.
+Remove the modal/element and events from the document.
 
 ## Global Methods
 
@@ -212,9 +212,9 @@ Remove the modal/element and events from document.
 
 create a random UUID for `clientId` and `traceId`.
 
-## How to customize the UI?
+## How to customise the UI?
 
-You can customize the UI through `--mixpay` parent CSS class. It acts like a namespace, will not messing with your website style.
+You can customise the UI through `--mixpay` parent CSS class. It acts like a namespace and will not mess with your website style.
 
 ![Using CSS class to customize the UI](https://developers.mixpay.me/images/js-plugin-class.png)
 

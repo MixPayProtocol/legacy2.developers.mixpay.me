@@ -1,5 +1,5 @@
 ---
-summary:  MixPay API for Get Multisig Group Id
+summary:  MixPay API for getting Multisig Group Id
 ---
 
 ## POST /multisig
@@ -17,7 +17,7 @@ https://api.mixpay.me/v1/multisig
 |  Param | Description |
 | --- | --- |
 | `receivers` | Array, members of multisig group, each member must be a valid Mixin UUID, minimum 3, maximum 256. |
-| `threshold` | Integer, threshold values for multisig group, not bigger than the size of receivers. |
+| `threshold` | Integer, threshold values for multisig group, not more significant than the size of receivers. |
 
 ### Example request - Get Multisig Group Id.
 

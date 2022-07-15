@@ -1,5 +1,5 @@
 ---
-summary: setting/quote_assets API list all supported assets you can use as the payment's quote assets.
+summary: setting/quote_assets API lists all supported assets you can use as the payment's quote assets.
 ---
 
 ## GET /setting/quote_assets
@@ -69,5 +69,5 @@ curl -i -X GET -H "Content-Type: application/json" \
 ```
 
 :::note
-This interface will only return a list of assets which can be used for quote.
+This interface will only return a list of assets used for a quote.
 :::
