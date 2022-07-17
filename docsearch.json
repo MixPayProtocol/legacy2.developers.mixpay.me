@@ -2,14 +2,14 @@
   "index_name": "adonisjs_next",
   "start_urls": [
     {
-      "url": "https://developers.mixpay.me/guides/",
+      "url": "https://mixpay.me/developers/guides/",
       "page_rank": "2",
       "variables": {
         "zone": "guides"
       }
     },
     {
-      "url": "https://developers.mixpay.me/api/",
+      "url": "https://mixpay.me/developers/api/",
       "page_rank": "1",
       "variables": {
         "zone": "api"

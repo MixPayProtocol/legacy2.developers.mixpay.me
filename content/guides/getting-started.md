@@ -47,4 +47,4 @@ Once you have a Mixin account. Open the Mixin App:
 - Step 2. Click "Add bot";
 - Step 3. Click the little robot icon to open MixPay.
 
-![](https://developers.mixpay.me/images/mipklmn.png)
+![](https://mixpay.me/developers/images/mipklmn.png)

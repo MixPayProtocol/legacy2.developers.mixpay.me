@@ -11,17 +11,17 @@ Before you get started, all you need to know is that it takes only four steps to
 3.  Look query the payment results
 4.  Guaranteed trades based on Mixin's multi-signature API.
 
-More about MixPay, you can check [this](https://developers.mixpay.me/guides/introduction) for reference.
+More about MixPay, you can check [this](https://mixpay.me/developers/guides/introduction) for reference.
 
 ## Demo
 
 This is the demo of MixPay.
 
-![](https://developers.mixpay.me/images/pvfjlpq.gif)
+![](https://mixpay.me/developers/images/pvfjlpq.gif)
 
 ## For developers
 
-There is no need to register MixPay to use MixPay API. You can use MixPay API with your preferred languages. MixPay API click [here](https://developers.mixpay.me/api/overview).
+There is no need to register MixPay to use MixPay API. You can use MixPay API with your preferred languages. MixPay API click [here](https://mixpay.me/developers/api/overview).
 
 Before you start, you need to know that through the API of MixPay, the crypto paid by the user is settled directly to your Mixin bot, MixPay user, or Mixin Wallet.
 
@@ -35,11 +35,11 @@ We should know that the members of a multi-signature group can be either common 
 
 More about the multi-signature concept, you can click [here](https://developers.mixin.one/docs/mainnet/concepts/multisig) for reference.
 
-Then you need to use this [API](https://developers.mixpay.me/api/multisig/get-multisig-id) to generate the `multisigId`. The parameter is an array, which includes the UUID of the multi-signature group members. And the response of this API is the `multisigId`. It's an essential parameter for receiving funds for multi-signature groups.
+Then you need to use this [API](https://mixpay.me/developers/api/multisig/get-multisig-id) to generate the `multisigId`. The parameter is an array, which includes the UUID of the multi-signature group members. And the response of this API is the `multisigId`. It's an essential parameter for receiving funds for multi-signature groups.
 
 ### Step 2 - Create the payment link
 
-In the first step, you generate `multisigId`, and then you need to use this parameter to create the payment link. You can use this [API](https://developers.mixpay.me/api/payments/pay) to integrate with MixPay.
+In the first step, you generate `multisigId`, and then you need to use this parameter to create the payment link. You can use this [API](https://mixpay.me/developers/api/payments/pay) to integrate with MixPay.
 
 The specific parameters are below, and the `payeeId` must be `multisigId` generated in the first step. Then you can convert this URL to a QR code, and the users scan the QR code to pay, or it could say that the funds are deposited into a multi-signature group.
 
@@ -56,7 +56,7 @@ The specific parameters are below, and the `payeeId` must be `multisigId` ge
 
 The following section will explain the meaning of the parameters of this API and how they are used.
 
-The ID of cryptocurrency you need to acquire. The type of assets is used for settlement and quote. Also, you can click [here](https://developers.mixpay.me/guides/assets) for the detail about supported assets.
+The ID of cryptocurrency you need to acquire. The type of assets is used for settlement and quote. Also, you can click [here](https://mixpay.me/developers/guides/assets) for the detail about supported assets.
 
 And the `traceId` you can generate randomly. If you use Golang, the sample code is like below.
 
@@ -86,7 +86,7 @@ https://mixpay.me/pay?payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9&settlementAss
 
 ### Step 3 - Look query the payment results
 
-Then you can use this [API](https://developers.mixpay.me/api/payments/payments-results) to loop query payment results. The parameter is the `traceId` you generated. And the response is the `status` of payment. The `status` has three parameters, unpaid, failed, and success.
+Then you can use this [API](https://mixpay.me/developers/api/payments/payments-results) to loop query payment results. The parameter is the `traceId` you generated. And the response is the `status` of payment. The `status` has three parameters, unpaid, failed, and success.
 
 ### Step 4 - Guaranteed trades based on Mixin's multi-signature API
 

@@ -7,6 +7,6 @@ MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for
 
 The supported assets can be found in the following links.
 
--   [Payment Assets](https://developers.mixpay.me/guides/payment-assets)
--   [Quote Assets](https://developers.mixpay.me/guides/quote-assets)
--   [Settlement Assets](https://developers.mixpay.me/guides/settlement-assets)
+-   [Payment Assets](https://mixpay.me/developers/guides/payment-assets)
+-   [Quote Assets](https://mixpay.me/developers/guides/quote-assets)
+-   [Settlement Assets](https://mixpay.me/developers/guides/settlement-assets)

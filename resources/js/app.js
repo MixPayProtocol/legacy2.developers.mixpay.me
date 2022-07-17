@@ -29,11 +29,11 @@ function prefixZoneName(title, docUrl) {
     return title
   }
 
-  if (docUrl.includes('https://developers.mixpay.me/api/')) {
+  if (docUrl.includes('https://mixpay.me/developers/api/')) {
     return `API / ${title}`
   }
 
-  if (docUrl.includes('https://developers.mixpay.me/guides/')) {
+  if (docUrl.includes('https://mixpay.me/developers/guides/')) {
     return `Guides / ${title}`
   }
 

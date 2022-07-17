@@ -8,7 +8,7 @@ This method lets your customer complete the payment without leaving your website
 
 ## Online Demo
 
-![](https://developers.mixpay.me/images/js-plugin-popup.png)
+![](https://mixpay.me/developers/images/js-plugin-popup.png)
 
 - Real-time Demo: https://mixpay.me/plugins/payment.html
 - Source code of the Demo: https://github.com/MixPayHQ/mixpayjs/tree/master/docs
@@ -216,8 +216,8 @@ create a random UUID for `clientId` and `traceId`.
 
 You can customise the UI through `--mixpay` parent CSS class. It acts like a namespace and will not mess with your website style.
 
-![Using CSS class to customize the UI](https://developers.mixpay.me/images/js-plugin-class.png)
+![Using CSS class to customize the UI](https://mixpay.me/developers/images/js-plugin-class.png)
 
 ## Resources
 
-* [Documentation API](https://developers.mixpay.me/docs/api-overview)
+* [Documentation API](https://mixpay.me/developers/api-overview)

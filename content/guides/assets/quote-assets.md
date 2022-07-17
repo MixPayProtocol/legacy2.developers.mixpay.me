@@ -7,14 +7,14 @@ MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for
 
 ## Quote Assets List
 
-Quote assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer to this [API](https://developers.mixpay.me/api/assets/quote-assets).
+Quote assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer to this [API](https://mixpay.me/developers/api/assets/quote-assets).
 
 ### **Cryptocurrencies**
 
 :::warning
 The following is just an example list, the assets support list changes over time, and most of the time, it will be outdated. 
 
-Please always use the [quote-assets API](https://developers.mixpay.me/api/assets/quote-assets) to get assets' UUID and check for all supported assets.
+Please always use the [quote-assets API](https://mixpay.me/developers/api/assets/quote-assets) to get assets' UUID and check for all supported assets.
 :::
 
 | Currency | Symbol | UUID | Network |

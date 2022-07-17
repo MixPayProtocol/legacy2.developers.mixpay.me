@@ -29,7 +29,7 @@ After payment successfully, MixPay will issue a POST request to this URL, with t
 When your callback endpoint receives a call:
 
 - First, in your database, look for the incoming `orderId` or `traceId` value. **This step is essential, be careful anyone can post a fake value to your endpoint**;
-- If the previous step has a match, then call the [payments-results API](https://developers.mixpay.me/api/payments/payments-results), and check for `status` field to be `success`;
+- If the previous step has a match, then call the [payments-results API](https://mixpay.me/developers/api/payments/payments-results), and check for `status` field to be `success`;
 - Only when the `status` filed is `success`, now you can safely mark your order as completed. 
 - Response to the callback (see below).
 

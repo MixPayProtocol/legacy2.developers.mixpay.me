@@ -6,14 +6,14 @@ MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for
 
 ## Payment Assets List
 
-Payment assets support cryptocurrencies right now. And the detailed information about payment assets, you can refer to this [payment-assets API](https://developers.mixpay.me/api/assets/payment-assets).
+Payment assets support cryptocurrencies right now. And the detailed information about payment assets, you can refer to this [payment-assets API](https://mixpay.me/developers/api/assets/payment-assets).
 
 ### **Cryptocurrencies:**
 
 :::warning
 The following is just an example list, the assets support list changes over time, and most of the time, it will be outdated. 
 
-Please always use the [payment-assets API](https://developers.mixpay.me/api/assets/payment-assets) to get assets' UUID and check for all supported assets.
+Please always use the [payment-assets API](https://mixpay.me/developers/api/assets/payment-assets) to get assets' UUID and check for all supported assets.
 :::
 
 | Currency | Symbol | UUID | Network |
