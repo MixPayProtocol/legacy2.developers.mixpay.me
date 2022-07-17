@@ -3,16 +3,16 @@ summary: Quote assets support cryptocurrencies and fiat currencies.
 ---
 
 
-MixPay is decentralized and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of quote, payment and settlement. MixPay supports three settlement modes at the same time, normal user, robot, and multi-signature group.
+MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of the quote, payment and settlement. MixPay supports three settlement modes simultaneously: regular user, robot, and multi-signature group.
 
 ## Quote Assets List
 
-Quote assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer to this [api](https://developers.mixpay.me/api/assets/quote-assets).
+Quote assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer to this [API](https://developers.mixpay.me/api/assets/quote-assets).
 
 ### **Cryptocurrencies**
 
 :::warning
-The following is just an example list, the assets support list changes over time, and most of the time it will be outdated. 
+The following is just an example list, the assets support list changes over time, and most of the time, it will be outdated. 
 
 Please always use the [quote-assets API](https://developers.mixpay.me/api/assets/quote-assets) to get assets' UUID and check for all supported assets.
 :::

@@ -1,5 +1,5 @@
 ---
-summary: setting/settlement_assets API list all supported assets you can use as the payment's settlement assets.
+summary: setting/settlement_assets API lists all supported assets you can use as the payment's settlement assets.
 ---
 
 ## GET /setting/settlement_assets

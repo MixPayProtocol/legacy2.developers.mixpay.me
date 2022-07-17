@@ -1,5 +1,5 @@
 ---
-summary: setting/payment_assets API list all supported assets you can use as the payment assets.
+summary: setting/payment_assets API lists all supported assets you can use as payment assets.
 ---
 
 ## GET /setting/payment_assets

@@ -4,9 +4,9 @@ summary:  Contact the MixPay customer service.
 
 ## Contact us on Mixin
 
-Our MixPay product is built on top of Mixin App, as a developer, you should be familiar with both of these products.
+Our MixPay product is built on top of the Mixin App; as a developer, you should be familiar with both of these products.
 
-So here we only provide the Mixin contact information.
+So here, we only provide the Mixin contact information.
 
 Please follow the instruction to get started:
 

@@ -2,18 +2,18 @@
 summary:  Settlement assets support cryptocurrencies and fiat currencies.
 ---
 
-MixPay is decentralized and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of quote, payment and settlement. MixPay supports three settlement modes at the same time, normal user, robot, and multi-signature group.
+MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of the quote, payment and settlement. MixPay supports three settlement modes simultaneously: regular user, robot, and multi-signature group.
 
 ## Settlement Assets List
 
-Settlement assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer this [api](https://developers.mixpay.me/api/assets/settlement-assets).
+Settlement assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets [API](https://developers.mixpay.me/api/assets/settlement-assets).
 
 ### **Cryptocurrencies**
 
 
 
 :::warning
-The following is just an example list, the assets support list changes over time, and most of the time it will be outdated. 
+The following is just an example list, the assets support list changes over time, and most of the time, it will be outdated. 
 
 Please always use the [settlement-assets API](https://developers.mixpay.me/api/assets/settlement-assets) to get assets' UUID and check for all supported assets.
 :::
@@ -38,7 +38,7 @@ Please always use the [settlement-assets API](https://developers.mixpay.me/api/a
 
 
 :::warning
-If you want to accept Fiat currencies as your settlement currency or want more more supported Fiat currencies, you need to [contact our customer service](https://developers.mixpay.me/guides/contact-customer-service) .
+If you want to accept Fiat currencies as your settlement currency or want more supported Fiat currencies, you need to [contact our customer service](https://developers.mixpay.me/guides/contact-customer-service).
 
 :::
 

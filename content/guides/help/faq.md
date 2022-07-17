@@ -1,5 +1,5 @@
 ---
-summary:  A frequently asked questions for using MixPay crypto payment gateway.
+summary:  A frequently asked question for using MixPay crypto payment gateway.
 ---
 
 
