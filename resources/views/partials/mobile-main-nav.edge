@@ -4,13 +4,13 @@
       @if(groups.length > 1)
         <optgroup label="{{ name }}">
           @each(group in groups)
-            <option value="{{ group.landingDoc.url }}">
+            <option value="https://mixpay.me/developers{{ group.landingDoc.url }}">
               {{ group.name }}
             </option>
           @end
         </optgroup>
       @else
-        <option value="{{ groups[0].landingDoc.url }}">
+        <option value="https://mixpay.me/developers{{ groups[0].landingDoc.url }}">
           {{ name }}
         </option>
       @end

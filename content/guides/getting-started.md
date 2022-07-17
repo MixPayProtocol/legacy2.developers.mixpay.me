@@ -2,7 +2,7 @@
 summary:  In this article will guide how to integrate MixPay into your existing system.
 ---
 
-This article will show you the MixPay ecosystem. Get you to warn up for integrating MixPay crypto payment gateway into your existing system.
+This guide will show you the MixPay ecosystem. Get you to warn up for integrating MixPay crypto payment gateway into your existing system.
 
 ## Mixin & MixPay
 
