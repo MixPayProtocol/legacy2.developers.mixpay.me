@@ -6,8 +6,6 @@ import { listen } from 'quicklink'
  * Css imports. Do not change the order
  */
 import 'normalize.css'
-import '../fonts/Calibre/stylesheet.css'
-import '../fonts/jetbrains/stylesheet.css'
 import '../css/variables.css'
 import '../css/dark-variables.css'
 import '../css/app.css'
@@ -162,7 +160,7 @@ Alpine.data('tocMenu', function () {
       anchors.forEach((link) => {
         link.onclick = function (e) {
           e.preventDefault();
-          history.pushState({}, '', link.href);
+          history.pushState({}, '', location.href + link.getAttribute("href"));
 
           anchors.forEach((anchor) => anchor.classList.remove('up-current'))
           link.classList.add('up-current')

@@ -11,6 +11,8 @@
 
   @if(app.env.get('ENV') != 'local')
     <base href="https://mixpay.me/developers/">
+  @else
+    <base href="/">
   @end
 
   <meta property="og:type" content="article">
@@ -21,42 +23,6 @@
   <link rel="shortcut icon" href="icons/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
-  <link
-    rel="preload"
-    href="{{ asset('assets/fonts/Calibre.woff2') }}"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  >
-  <link
-    rel="preload"
-    href="{{ asset('assets/fonts/Calibre-Medium.woff2') }}"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  >
-  <link
-    rel="preload"
-    href="{{ asset('assets/fonts/Calibre-Semibold.woff2') }}"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  >
-  <link
-    rel="preload"
-    href="{{ asset('assets/fonts/Calibre-Bold.woff2') }}"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  >
-  <link
-    rel="preload"
-    href="{{ asset('assets/fonts/JetBrainsMono-Regular.woff2') }}"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  >
 
   {{-- Since entry point loading is defered, we have to keep this inline to avoid FOUC --}}
   <script>
