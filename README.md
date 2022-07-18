@@ -44,6 +44,8 @@ Generate .html static file in to public/ folder:
 npm run build
 ```
 
+> Please remote `ENV=local` entry from .env when generating static file on production.
+
 
 ## Run tests
 
