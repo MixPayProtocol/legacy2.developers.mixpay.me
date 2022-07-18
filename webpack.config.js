@@ -30,7 +30,7 @@ Encore.setOutputPath('./public/assets')
 | relative from the "public" directory.
 |
 */
-Encore.setPublicPath('https://mixpay.me/developers/assets')
+Encore.setPublicPath('assets')
 
 /*
 |--------------------------------------------------------------------------
