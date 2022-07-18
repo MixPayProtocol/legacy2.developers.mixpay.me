@@ -1,5 +1,4 @@
 import 'lazysizes'
-import 'unpoly'
 import Alpine from 'alpinejs'
 import { listen } from 'quicklink'
 
@@ -7,7 +6,6 @@ import { listen } from 'quicklink'
  * Css imports. Do not change the order
  */
 import 'normalize.css'
-import 'unpoly/unpoly.css'
 import '../fonts/Calibre/stylesheet.css'
 import '../fonts/jetbrains/stylesheet.css'
 import '../css/variables.css'
@@ -18,8 +16,6 @@ import '../css/sidebar.css'
 import '../css/toc.css'
 import '../css/markdown.css'
 import '../css/carbon-ads.css'
-
-up.feedback.config.navSelectors = ['[up-nav]']
 
 /**
  * Prefix zone name to the search results
@@ -80,25 +76,25 @@ Alpine.data('copyToClipboard', function () {
 Alpine.data('search', function (apiKey) {
   return {
     init() {
-      Promise.all([
-        import(/* webpackChunkName: "docsearch" */ '@docsearch/js'),
-        import(/* webpackChunkName: "docsearch" */ '@docsearch/css'),
-      ])
-        .then(([docsearch]) => {
-          docsearch = docsearch.default
-          docsearch({
-            apiKey: apiKey,
-            indexName: 'adonisjs_next',
-            container: '#algolia-search-input',
-            transformItems: (items) => {
-              return items.map((item) => {
-                item.hierarchy.lvl0 = prefixZoneName(item.hierarchy.lvl0, item.url)
-                return item
-              })
-            },
-          })
-        })
-        .catch(console.error)
+      // Promise.all([
+      //   import(/* webpackChunkName: "docsearch" */ '@docsearch/js'),
+      //   import(/* webpackChunkName: "docsearch" */ '@docsearch/css'),
+      // ])
+      //   .then(([docsearch]) => {
+      //     docsearch = docsearch.default
+      //     docsearch({
+      //       apiKey: apiKey,
+      //       indexName: 'adonisjs_next',
+      //       container: '#algolia-search-input',
+      //       transformItems: (items) => {
+      //         return items.map((item) => {
+      //           item.hierarchy.lvl0 = prefixZoneName(item.hierarchy.lvl0, item.url)
+      //           return item
+      //         })
+      //       },
+      //     })
+      //   })
+      //   .catch(console.error)
     },
   }
 })
@@ -149,15 +145,15 @@ Alpine.data('offCanvasMenu', function () {
   }
 })
 
-Alpine.data('prefetch', function () {
-  return {
-    init() {
-      listen({
-        el: this.$el,
-      })
-    },
-  }
-})
+// Alpine.data('prefetch', function () {
+//   return {
+//     init() {
+//       listen({
+//         el: this.$el,
+//       })
+//     },
+//   }
+// })
 
 Alpine.data('tocMenu', function () {
   return {

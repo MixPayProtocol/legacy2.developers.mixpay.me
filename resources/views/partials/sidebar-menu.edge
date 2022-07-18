@@ -11,7 +11,11 @@
               @each(categoryDoc in category.docs)
                 <li>
                   <a
-                    href="https://mixpay.me/developers{{ categoryDoc.url }}"
+                    @if(app.env.get('ENV') == 'local')
+                      href="{{ categoryDoc.url }}"
+                    @else
+                      href="https://mixpay.me/developers{{ categoryDoc.url }}"
+                    @end
                     class="{{ doc.url === categoryDoc.url ? 'up-current' : '' }}"
                   >
                     {{ categoryDoc.title }}
