@@ -77,22 +77,22 @@
         "docs": [
           {
             "title": "Point-of-Sale (PoS)",
-            "permalink": "pos",
+            "permalink": "solutions/pos",
             "contentPath": "solutions/pos.md"
           },
           {
             "title": "Online Payment",
-            "permalink": "online-payment",
+            "permalink": "solutions/online-payment",
             "contentPath": "solutions/online-payment.md"
           },
           {
             "title": "Guaranteed Trades",
-            "permalink": "guaranteed-trades",
+            "permalink": "solutions/guaranteed-trades",
             "contentPath": "solutions/guaranteed-trades.md"
           },
           {
             "title": "Instant Exchange",
-            "permalink": "instant-exchange",
+            "permalink": "solutions/instant-exchange",
             "contentPath": "solutions/instant-exchange.md"
           }
         ]
