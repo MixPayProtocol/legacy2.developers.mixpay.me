@@ -111,6 +111,16 @@
             "contentPath": "payments/payments-info.md"
           }
         ]
+      },
+      {
+        "name": "Multisig",
+        "docs": [
+          {
+            "title": "Get Multisig Group Id",
+            "permalink": "multisig/get-multisig-id",
+            "contentPath": "multisig/get-multisig-id.md"
+          }
+        ]
       }
     ]
   }

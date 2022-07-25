@@ -106,10 +106,14 @@
             "contentPath": "help/faq.md"
           },
           {
-
             "title": "Contact Customer Service",
             "permalink": "contact-customer-service",
             "contentPath": "help/contact-customer-service.md"
+          },
+          {
+            "title": "Design assets",
+            "permalink": "design-assets",
+            "contentPath": "help/design-assets.md"
           }
         ]
       }

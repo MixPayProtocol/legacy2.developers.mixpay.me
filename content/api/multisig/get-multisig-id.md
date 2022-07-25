@@ -22,7 +22,7 @@ https://api.mixpay.me/v1/multisig
 ### Example request - Get Multisig Group Id.
 
 ```bash
-curl -i -X GET -H "Content-Type: application/json" https://api.mixpay.me/v1/multisig?receivers=['f4dc0c64-b169-11ec-b909-0242ac120002','081172a6-b16a-11ec-b909-0242ac120002','0c64b4e4-b16a-11ec-b909-0242ac120002']?threshold=2
+curl -i -X GET -H "Content-Type: application/json" https://api.mixpay.me/v1/multisig?receivers=['f4dc0c64-b169-11ec-b909-0242ac120002','081172a6-b16a-11ec-b909-0242ac120002','0c64b4e4-b16a-11ec-b909-0242ac120002']&threshold=2
 ```
 
 ```json
