@@ -22,8 +22,16 @@ https://api.mixpay.me/v1/multisig
 ### Example request - Get Multisig Group Id.
 
 ```bash
-curl -i -X POST -H "Content-Type: application/json" https://api.mixpay.me/v1/multisig?receivers=['f4dc0c64-b169-11ec-b909-0242ac120002','081172a6-b16a-11ec-b909-0242ac120002','0c64b4e4-b16a-11ec-b909-0242ac120002']&threshold=2
+curl -i -X POST https://api.mixpay.me/v1/multisig \
+  -d "receivers[]"="f4dc0c64-b169-11ec-b909-0242ac120002" \
+  -d "receivers[]"="081172a6-b16a-11ec-b909-0242ac120002" \
+  -d "receivers[]"="0c64b4e4-b16a-11ec-b909-0242ac120002" \
+  -d "threshold"=2
 ```
+
+:::warning
+The `multisigId` show bellow is fake data, please don't use it on any purpose.
+:::
 
 ```json
 // title: Response
@@ -32,8 +40,9 @@ curl -i -X POST -H "Content-Type: application/json" https://api.mixpay.me/v1/mul
   "success":true,
   "message":"",
   "data":{
-    "multisigId":"bd603c59-ffae-451b-9748-33624d731dfa"
+    "multisigId":"bd6039-ffae-451b-9748-33624d731dfa"
   },
   "timestampMs":1648632759499
 }
 ```
+
