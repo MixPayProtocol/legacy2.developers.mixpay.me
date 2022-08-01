@@ -78,7 +78,7 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
     "settlementAssetSymbol":"MOB",
     "paymentAssetSymbol":"BTC",
     "quoteAssetSymbol":"USDT",
-    // Wallet Address
+    // Wallet Address for recive money
     "destination":"1NohyFdBUZ4g3ZNBoe9FL16poBUveXXf3e",
     // tag,
     "tag":""
@@ -86,3 +86,19 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
   "timestampMs":1648190663161
 }
 ```
+
+
+
+## Collect the money
+
+
+Please refer to [Pay using an on-chain Wallet](https://mixpay.me/developers/guides/using-raw-api#pay-using-an-on-chain-wallet).
+
+
+
+## Expiration
+
+
+
+When is a MixPay payment expired? Please refer to [Expiration](https://mixpay.me/developers/guides/using-raw-api#expiration).
+

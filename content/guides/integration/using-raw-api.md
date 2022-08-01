@@ -83,7 +83,7 @@ There are two kinds of expiration on creating a MixPay payment.
 
 
 
-In online shopping flow, sometime you have this business logic - when your order expired, you need to release the inventory.
+In online shopping flow, sometimes you have this business logic - when your order expired, you need to release the inventory.
 
 
 
@@ -91,11 +91,11 @@ You can provide the `expiredTimestamp` parameter, to keep the MixPay payment in 
 
 
 
-When MixPay payment expired, user will not be able to able to pay. (You need to construct the UI in your side.)
+When MixPay payment expired, the user will not be able to able to pay. (You need to construct the UI on your side.)
 
 
 
-If you leave   `expiredTimestamp` parameter empty, this payment will be valid.
+If you leave `expiredTimestamp` parameter empty, this payment will be valid.
 
 
 
@@ -103,19 +103,19 @@ If you leave   `expiredTimestamp` parameter empty, this payment will be valid.
 
 
 
-If the customer's payment assets is difference than the settlement assets, let's say payment assets is BTC and the settlement assets is ETH. MixPay will convert BTC to ETH internally for the merchants. 
+If the customer's payment asset is different than the settlement assets, let's say the payment asset is BTC and the settlement asset is ETH. MixPay will convert BTC to ETH internally for the merchants. 
 
 
 
-But due to the risk of crypto price fluctuations,  for example, if the customer's is finishing the payment after 24 hours, and the BTC price is drop from $25000 to $22000.
+But due to the risk of crypto price fluctuations,  for example, if the customer is finishing the payment after 24 hours, and the BTC price drops from $25000 to $22000.
 
 
 
-So we need to set a reasonable expire time, otherwise, we may suffer tremendous lose. This expire time we call it "tolerate period". 
+So we need to set a reasonable expiration time, otherwise, we may suffer tremendous loss. This expiration time we call it "tolerate period". 
 
 
 
-"tolerate period" is defined internally. When creating a payment, will have there two fileds in the response: 
+"tolerate period" is defined internally. When creating a payment, will have there two fields in the response: 
 
 
 
