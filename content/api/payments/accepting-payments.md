@@ -43,7 +43,7 @@ https://api.mixpay.me/v1/payments
 
 
 
-The following as a coffee shop example: 
+The following is a coffee shop example: 
 
 
 
@@ -78,8 +78,9 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
     "isChain":false,
     
     // `expire` and `seconds` are the same thing as marking the 
-    // payment expired. When the payment expired, you can reuse
-    // the same request to refresh the payment.
+    // payment "tolerate period" expired (see article end). When 
+    // the "tolerate period" expired, you can reuse the same request
+    // to refresh the payment.
     "expire":1659340995,
     "seconds":60,
     
@@ -120,6 +121,19 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
 
 
 
-:::note
+## Collect the money
+
+
 And then, you can use this response to make [Mixin Payment](https://developers.mixin.one/docs/schema#payment). Please refer to [Pay with Mixin wallet](https://mixpay.me/developers/guides/using-raw-api#pay-with-mixin-wallet).
-:::
+
+
+
+## Expiration
+
+
+
+When is a MixPay payment expired? Please refer to [Expiration](https://mixpay.me/developers/guides/using-raw-api#expiration).
+
+
+
+ 

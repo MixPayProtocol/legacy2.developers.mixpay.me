@@ -70,6 +70,69 @@ You can reference the following UI to construct your App View:
 > **Note: If the payment assets are EOS, you can use the** **`tag`** **and** **`destination`** **from the API result.**
 
 
+
+## Expiration
+
+
+
+There are two kinds of expiration on creating a MixPay payment.
+
+
+
+### 1. Payment expired (closed)
+
+
+
+In online shopping flow, sometime you have this business logic - when your order expired, you need to release the inventory.
+
+
+
+You can provide the `expiredTimestamp` parameter, to keep the MixPay payment in sync with your order expiration time.
+
+
+
+When MixPay payment expired, user will not be able to able to pay. (You need to construct the UI in your side.)
+
+
+
+If you leave   `expiredTimestamp` parameter empty, this payment will be valid.
+
+
+
+### 2. Tolerate period expired (refresh needed)
+
+
+
+If the customer's payment assets is difference than the settlement assets, let's say payment assets is BTC and the settlement assets is ETH. MixPay will convert BTC to ETH internally for the merchants. 
+
+
+
+But due to the risk of crypto price fluctuations,  for example, if the customer's is finishing the payment after 24 hours, and the BTC price is drop from $25000 to $22000.
+
+
+
+So we need to set a reasonable expire time, otherwise, we may suffer tremendous lose. This expire time we call it "tolerate period". 
+
+
+
+"tolerate period" is defined internally. When creating a payment, will have there two fileds in the response: 
+
+
+
+```
+// Unit Timestamp for accuracy
+"expire":1659340995,
+
+// A little helper for setting up the countdown
+"seconds":60,
+```
+
+
+
+When the "tolerate period" is expired, you **must** request the create payment API with the same parameters. MixPay will recalculate the `paymentAmount` . 
+
+
+
 ## Getting the result
 
 At this point, customers are paying crypto using our Paylink; how can you get the paying results?
