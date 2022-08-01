@@ -9,14 +9,14 @@ You can use our MixPay payment page to create a MixPay payment. Paylink is the m
 Here is an example, click the following button and check it out yourself:
 
 
-<a href="https://mixpay.me/pay?payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9&settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa&quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5&quoteAmount=10&orderId=product1000432&returnTo=the_customer_order_payment_url_on_your_site">
+<a href="https://mixpay.me/pay?payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9&settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa&quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5&quoteAmount=10&orderId=product1000432&returnTo=https%3A%2F%2Fgoogle.com">
 <img src="https://mixpay.me/developers/images/pay-with-crypto-btn.png" width="300px"}>
 </a>
 
 
 For better reference, the "Pay with crypto" button's link is:
 
-https://mixpay.me/pay?payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9&settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa&quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5&quoteAmount=10&orderId=product1000432&returnTo=the_customer_order_payment_url_on_your_site
+https://mixpay.me/pay?payeeId=a38ed284-5689-4fb9-8c2a-91fba5e32ce9&settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa&quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5&quoteAmount=10&orderId=product1000432&returnTo=https%3A%2F%2Fgoogle.com
 
 
 When customers are on the checkout page, provide a "Pay with Crypto" button (with the above URL): 
@@ -37,7 +37,7 @@ settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa
 quoteAssetId=4d8c508b-91c5-375b-92b0-ee702ed2dac5
 quoteAmount=10
 orderId=product1000432
-returnTo=the_customer_order_payment_url_on_your_site
+returnTo=https%3A%2F%2Fgoogle.com
 ```
 
 
