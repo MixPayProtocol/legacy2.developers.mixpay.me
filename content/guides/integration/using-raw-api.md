@@ -119,7 +119,7 @@ So we need to set a reasonable expiration time, otherwise, we may suffer tremend
 
 
 
-```
+```bash
 // Unit Timestamp for accuracy
 "expire":1659340995,
 
@@ -129,7 +129,15 @@ So we need to set a reasonable expiration time, otherwise, we may suffer tremend
 
 
 
-When the "tolerate period" is expired, you **must** request the create payment API with the same parameters. MixPay will recalculate the `paymentAmount` . 
+When the "tolerate period" is expired, you **must** request the create payment API with the same parameters. MixPay will recalculate the `paymentAmount` .  
+
+
+
+:::warning
+
+If a customer pays with a "tolerate period" expired payment, if is "Pay with Mixin wallet", the crypto assets will refund, and the payment result will be `payment overtime`. If is "Pay using an on-chain Wallet", due to the crypto transfer's nature, we can not refund the money directly, we must get the customer's wallet address first, in this scenario, you can instruct the customer to [contact our customer service](https://help.mixpay.me/en_US/faq/how-to-contact-customer-service). 
+
+:::
 
 
 
