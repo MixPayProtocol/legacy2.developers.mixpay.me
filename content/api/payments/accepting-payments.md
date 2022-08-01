@@ -41,11 +41,27 @@ https://api.mixpay.me/v1/payments
 
 ## Example request - Accepting Payments
 
+
+
+The following as a coffee shop example: 
+
+
+
+- Merchant wants to accept BTC as a settlement asset.
+- The coffee order is 10  USD (Quote Asset is USD).
+- The customer wants to pay in ETH.
+
+
+
+The request will be: 
+
+
+
 ```bash
 curl -i -X POST https://api.mixpay.me/v1/payments \
   -d "payeeId"=a38ed284-5689-4fb9-8c2a-91fba5e32ce9 \
-  -d "paymentAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
-  -d "paymentAmount"="0.001" \
+  -d "orderId"=myapp_20001 \
+  -d "paymentAssetId"="43d61dcd-e413-450d-80b8-101d5e903357" \
   -d "settlementAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
   -d "quoteAssetId"="usd" \
   -d "quoteAmount"="10"
@@ -64,35 +80,46 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
     // `expire` and `seconds` are the same thing as marking the 
     // payment expired. When the payment expired, you can reuse
     // the same request to refresh the payment.
-    "expire":1648191480,
-    "seconds":900,
+    "expire":1659340995,
+    "seconds":60,
     
-    "payeeId":"834c17e1-1427-434a-a280-1b3cfee05111",
-    // The trace id when the user pays, use to get the result of payment. And trace for mixin.
-    "traceId":"4f7b0b8c-5112-4c25-9cea-4281ebf0d2dd",
-    "clientId":"640a555a-b554-4790-95ec-6c5675381035",
-    "paymentAssetId":"25dabac5-056a-48ff-b9f9-f67395dc407c",
-    // Assets to be paid by payer. And asset for mixin
-    "settlementAssetId":"25dabac5-056a-48ff-b9f9-f67395dc407c",
-    "quoteAssetId":"25dabac5-056a-48ff-b9f9-f67395dc407c",
-    "paymentAmount":"4",
-    // The amount of assets to be paid by payer. And amount for mixin
-    "quoteAmount":"4",
-    "estimatedSettlementAmount":"4",
-    // recipient for mixin
+    // Who will receive the money
+    "payeeId":"a38ed284-5689-4fb9-8c2a-91fba5e32ce9",
+    
+    // The trace id when the user pays, use to get the result of payment. 
+    // You can use this to construct a Mixin Wallet request.
+    "traceId":"fdc93358-7555-4c47-9e49-3a8343ca7c34",
+    
+    "clientId":"87583280-5837-464b-abd5-31038eed9aee",
+    
+    // Unique in your system.
+    "orderId":"myapp_20001",
+    
+    "paymentAssetSymbol":"ETH",
+    "paymentAssetId":"43d61dcd-e413-450d-80b8-101d5e903357",
+    "paymentAmount":"0.00593523",
+    
+    "settlementAssetSymbol":"BTC",
+    "settlementAssetId":"c6d0c728-2624-429b-8e0d-d9d19b6592fa",
+    "estimatedSettlementAmount":"0.0004284",
+    
+    "quoteAssetId":"usd",
+    "quoteAssetSymbol":"USD",
+    "quoteAmount":"10",
+
+    // Use to making a Mixin Wallet request.
+    "memo":"cGF5bWVudHw4NzU4MzI4MC01ODM3LTQ2NGItYWJkNS0zMTAzOGVlZDlhZWU=",
+    
     "recipient":"3539c3ce-52c0-4b0b-9573-c035ecb98d48",
-    // memo for mixin
-    "memo":"cGF5bWVudHw2NDBhNTU1YS1iNTU0LTQ3OTAtOTVlYy02YzU2NzUzODEwMzU=",
-    "settlementAssetSymbol":"TRX",
-    "paymentAssetSymbol":"TRX",
-    "quoteAssetSymbol":"TRX",
     "destination":"",
     "tag":""
   },
-  "timestampMs":1648190580346
+  "timestampMs":1659340935523
 }
 ```
 
+
+
 :::note
-And then, you can use this response to make [Mixin Payment](https://developers.mixin.one/docs/schema#payment).
+And then, you can use this response to make [Mixin Payment](https://developers.mixin.one/docs/schema#payment). Please refer to [Pay with Mixin wallet](https://mixpay.me/developers/guides/using-raw-api#pay-with-mixin-wallet).
 :::

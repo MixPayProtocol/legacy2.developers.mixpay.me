@@ -34,7 +34,7 @@ When a customer makes a purchase, on your App check-out page, show a "Pay with C
 
 ### Pay with Mixin wallet 
 
-In step 3, if the customer is selecting Pay using Mixin Wallet, your App should call accepting-payments API](https://mixpay.me/developers/api/payments/accepting-payments).
+In step 3, if the customer is selecting Pay using Mixin Wallet, your App should call [accepting-payments API](https://mixpay.me/developers/api/payments/accepting-payments).
 
 When getting the MixPay API result, your App client has to call Mixin App using URL Schema([What is URL Schema? ](https://helpcenter.trendmicro.com/en-us/article/tmka-18277)) to finish the payment:  
 
