@@ -60,9 +60,13 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
   "message":"",
   "data":{
     "isChain":false,
+    
+    // `expire` and `seconds` are the same thing as marking the 
+    // payment expired. When the payment expired, you can reuse
+    // the same request to refresh the payment.
     "expire":1648191480,
-    // Payment expiration time
     "seconds":900,
+    
     "payeeId":"834c17e1-1427-434a-a280-1b3cfee05111",
     // The trace id when the user pays, use to get the result of payment. And trace for mixin.
     "traceId":"4f7b0b8c-5112-4c25-9cea-4281ebf0d2dd",
