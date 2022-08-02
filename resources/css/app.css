@@ -9,7 +9,7 @@ COMMON STYLES
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 52.5%;
   scroll-padding-top: 72px;
 }
 
@@ -76,6 +76,11 @@ video {
 }
 
 @media (min-width: 1600px) {
+
+  html {
+    font-size: 62.5%;
+    scroll-padding-top: 72px;
+  }
 
   :root {
     --markdown-content-width: 75ch;

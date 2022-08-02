@@ -30,7 +30,8 @@ Encore.setOutputPath('./public/assets')
 | relative from the "public" directory.
 |
 */
-Encore.setPublicPath('assets')
+const assetsPath = Encore.isProduction() ? 'assets' : '/assets';
+Encore.setPublicPath(assetsPath)
 
 /*
 |--------------------------------------------------------------------------
