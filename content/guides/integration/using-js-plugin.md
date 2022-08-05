@@ -220,4 +220,4 @@ You can customise the UI through `--mixpay` parent CSS class. It acts like a nam
 
 ## Resources
 
-* [Documentation API](https://mixpay.me/developers/api-overview)
+* [Documentation API](https://mixpay.me/developers/api/overview)
