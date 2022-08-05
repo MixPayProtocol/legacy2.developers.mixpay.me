@@ -12,6 +12,14 @@ Quote assets support cryptocurrency and fiat currency.
 https://api.mixpay.me/v1/setting/quote_assets
 ```
 
+## Parameters
+
+### `payeeId` | optional | String
+
+Account ID for receiving money, pls see [Three types of account](https://mixpay.me/developers/guides/integration-verview#three-types-of-account) and [How to get payeeId](https://mixpay.me/developers/guides/integration-verview#payee-id).
+
+If you want to use a specified crypto asset we not yet publiclly supported, you can [contact our customer service](https://mixpay.me/developers/guides/contact-customer-service) and use this parameter to fetch your exclusive customized quote assets.
+
 ## Example request - Get Quote Assets
 
 ```bash

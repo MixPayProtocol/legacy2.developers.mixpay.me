@@ -12,13 +12,31 @@ Settlement assets support cryptocurrency and fiat currency.
 https://api.mixpay.me/v1/setting/settlement_assets
 ```
 
-### Authentication and options
+## Parameters
 
+### `payeeId` | optional | String
 
-|  |  |
-| -- | -- |
-| Authorization | Public Access |
-| Limitation | No limitation |
+Account ID for receiving money, pls see [Three types of account](https://mixpay.me/developers/guides/integration-verview#three-types-of-account) and [How to get payeeId](https://mixpay.me/developers/guides/integration-verview#payee-id).
+
+If you want to use a specified crypto asset we not yet publiclly supported, you can [contact our customer service](https://mixpay.me/developers/guides/contact-customer-service) and use this parameter to fetch your exclusive customized settlement asset.
+
+### `quoteAssetId` | optional | String
+
+`assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. 
+
+### `quoteAmount` | optional | Numeric
+
+Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USD.
+
+**Notes: `quoteAmount` has to work together with `quoteAssetId`.**
+
+In MixPay, different crypto asset supports different trading range, for example ETH support 0.01~50000 range, and less popular crypto due to less liquidity we will support less trading amount. 
+
+MixPay uses `quoteAmount` and `quoteAssetId` to calculate the settlement-supported assets. It will respond with `isAvailable` field, if `isAvailable` is `false`, means you cannot use this asset as a settlement asset. If you use an unsupported settlement asset, we will choose the settlement asset for you, most of the time will be the quote asset.
+
+:::note
+It's recommended to use this method to get the supported settlement assets list.
+:::
 
 ### Example request - Get Settlement Assets
 

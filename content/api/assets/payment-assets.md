@@ -22,7 +22,7 @@ If you want to support more crypto assets or remove some assets, you can [contac
 
 ### `quoteAssetId` | optional | String
 
-`assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. 
+`assetId` of quote cryptocurrency, the asset includes cryptocurrency and fiat currency. 
 
 ### `quoteAmount` | optional | Numeric
 
@@ -30,9 +30,9 @@ Corresponding to the amount of quoteAssetId, for example, the current commodity 
 
 **Notes: `quoteAmount` has to work together with `quoteAssetId`.**
 
-In MixPay, different crypto asset supports different price range, for example ETH support 0.01~50000 range, and  less popular crypto due to less liquidity we will support less trading amount. 
+In MixPay, different crypto asset supports different trading range, for example ETH support 0.01~50000 range, and less popular crypto due to less liquidity we will support less trading amount. 
 
-MixPay use `quoteAmount` and `quoteAssetId` to calculate the payment supported assets. It will response with `minPaymentAmount` and `maxPaymentAmount` two fields, if `maxPaymentAmount` is 0, means you cannot use this asset for this payment.
+MixPay uses `quoteAmount` and `quoteAssetId` to calculate the payment-supported assets. It will respond with `minPaymentAmount` and `maxPaymentAmount`  fields, if `maxPaymentAmount` is 0, means you cannot use this asset for this payment.
 
 :::note
 It's recommended to use this method to get the supported payment assets list.
