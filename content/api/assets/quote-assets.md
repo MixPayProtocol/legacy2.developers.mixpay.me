@@ -12,15 +12,7 @@ Quote assets support cryptocurrency and fiat currency.
 https://api.mixpay.me/v1/setting/quote_assets
 ```
 
-### Authentication and options
-
-
-|  |  |
-| -- | -- |
-| Authorization | Public Access |
-| Limitation | No limitation |
-
-### Example request - Get Quote Assets
+## Example request - Get Quote Assets
 
 ```bash
 curl -i -X GET -H "Content-Type: application/json" \
