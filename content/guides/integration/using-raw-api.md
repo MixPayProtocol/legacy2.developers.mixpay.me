@@ -55,6 +55,8 @@ trace=traceId
 
 Just passing the key value correspondingly, and the URL Schema will do the rest.
 
+> For more info for Mixin URL Schema, please read [this article](https://developers.mixin.one/docs/schema).
+
 ### Pay using an on-chain Wallet
 
 In step 3, if the customer is selecting Pay using the on-chain Wallet, your App should call on-chain payment API](https://mixpay.me/developers/api/payments/onchain-payments).
