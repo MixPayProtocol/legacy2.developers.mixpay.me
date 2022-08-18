@@ -159,3 +159,8 @@ DOC CONTENT STYLES
 span.required {
   color: #ed5959;
 }
+
+.markdown a {
+  cursor: pointer;
+  text-decoration: underline;
+}

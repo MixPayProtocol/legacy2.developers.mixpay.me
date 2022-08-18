@@ -160,7 +160,7 @@ Alpine.data('tocMenu', function () {
       anchors.forEach((link) => {
         link.onclick = function (e) {
           e.preventDefault();
-          history.pushState({}, '', window.location.pathname + link.getAttribute("href"));
+          history.pushState({}, '', window.location.origin + window.location.pathname + link.getAttribute("href"));
 
           anchors.forEach((anchor) => anchor.classList.remove('up-current'))
           link.classList.add('up-current')
@@ -204,18 +204,36 @@ Alpine.data('darkModeSwitch', function () {
   }
 })
 
-/**
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  /**
  * Scroll the active sidebar item into the view on page load
  */
-const activeSidebarItem = document.querySelector('.sidebar a.up-current')
-if (activeSidebarItem) {
-  activeSidebarItem.scrollIntoView({
-    block: 'center',
-  })
-}
+  const activeSidebarItem = document.querySelector('.sidebar a.up-current')
+  if (activeSidebarItem) {
+    activeSidebarItem.scrollIntoView({
+      block: 'center',
+    })
+  }
+
+
+  /**
+   * Fix doc sub header anchor
+   */
+  var icons = document.querySelectorAll('span.icon-link');
+  [].forEach.call(icons, function(icon) {
+    // do whatever
+    var link = icon.closest('a')
+
+    link.setAttribute('href', window.location.origin + window.location.pathname + link.getAttribute("href"));
+
+  });
+});
+
 
 function scrollToTargetAdjusted(target){
-  var element = document.querySelector('#' + target.hash.slice(1))
+  var element = document.querySelector("[id='"+target.hash.slice(1)+"']")
   var headerOffset = 50;
   var elementPosition = element.getBoundingClientRect().top;
   var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
