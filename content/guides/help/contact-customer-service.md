@@ -10,7 +10,7 @@ summary:  Contact the MixPay customer service.
 
 
 
-We have a developers chat group in Mixin App, if your encounter any obstacles, or have any doubts, please feel free to ask there, our excellent supporting team will be very pleased to help you.
+We have a developers chat group in Mixin App, if you have encounter any obstacles, or have any doubts, please feel free to ask there, our excellent supporting team will be very pleased to help you.
 
 
 
