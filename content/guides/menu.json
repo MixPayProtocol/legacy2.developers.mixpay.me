@@ -44,6 +44,11 @@
             "title": "Shopify Plugin",
             "permalink": "shopify-plugin",
             "contentPath": "integration/shopify-plugin.md"
+          },
+          {
+            "title": "WooCommerce Plugin",
+            "permalink": "woocommerce-plugin",
+            "contentPath": "integration/woocommerce-plugin.md"
           }
         ]
       },
