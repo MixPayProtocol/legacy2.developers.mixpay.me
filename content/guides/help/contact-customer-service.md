@@ -2,8 +2,6 @@
 summary:  Contact the MixPay customer service.
 ---
 
-## Contact us
-
 
 
 ## MixPay Developers Group 
