@@ -74,7 +74,7 @@ There are several ways you can integrate MixPay to accept crypto payments:
 2. [JS Plugin](https://mixpay.me/developers/guides/shopify-plugin) -  Like Paylink to handle all user payment close interaction, but on your web page, you can have more control over it.
 3. [Raw API call](https://mixpay.me/developers/guides/using-raw-api) - Above to method are in the browser; if you are in the circumstance that can't use the browser, maybe this is your choice.
 4. [Shopify Plugin](https://mixpay.me/developers/guides/shopify-plugin).
-5. WordPress WooCommerce Plugin (Work in process...).
+5. [WordPress WooCommerce Plugin](https://mixpay.me/developers/guides/woocommerce-plugin).
 
 Here is just a brief of the integration method available; for more detailed instructions, please visit the doc entry at the left menu.
 
