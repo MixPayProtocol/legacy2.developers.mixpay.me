@@ -29,9 +29,8 @@ https://mixpay.me/pay
 | `settlementAssetId` | optional | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. If left blank, the payee will receive the cryptocurrency the user pays for. |
 | `quoteAssetId` | optional | String | `assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
 | `quoteAmount` | optional | Numeric | Amount of cryptocurrency received, if left blank, the user can enter manually. |
-| `remark` | optional | String |  maximum 50. Payment remark viewable by the payee. |
-| `settlementMethod` | optional | String | Instant settlement wallet. This parameter has two values, `mixin` and `mixpay`. The default is mixin. |
-| `settlementMemo` | optional | String | maximum 200. A memo is similar to Mixin Snapshots, this parameter you can customise. This parameter only takes effect when your `settlementMethod` is equal to mixin. |
+| `remark` | optional | String |  maximum 50. Payment remark viewable by the payer. |
+| `settlementMemo` | optional | String | maximum 200. A memo is similar to Mixin Snapshots, this parameter you can customise. |
 | `returnTo` | optional | String | After successful payment, the page will jump to `returnTo` URL. |
 | `failedReturnTo` | optional | String | After payment failure, the page will jump to `failedReturnTo` URL. |
 | `callbackUrl` | optional | String | After payment successfully, MixPay will issue a POST request to this URL on our server-side. For security reasons, URLs only support HTTPS and has to be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.ASP). Please refer to [Payment Callback](https://mixpay.me/developers/api/payments/payment-callback). |

@@ -26,10 +26,9 @@ https://api.mixpay.me/v1/payments
 | `traceId` | optional | String |  UUID, used to prevent double payment and checking the payment result. You should use `orderId` instead.  |
 | `clientId` | optional | String | UUID of client of the payment. |
 | `paymentAmount` | optional | String | The `quoteAmount` parameter is invalid when `paymentAmount` is not null. |
-| `settlementMethod` | optional | String | Instant settlement wallet. This parameter has two values, `mixin` and `mixpay`. The default is `mixin`. |
-| `remark` | optional | String | maximum 50. Payment remark viewable by the payee. |
+| `remark` | optional | String | maximum 50. Payment remark viewable by the payer. |
 | `note` | optional | String | maximum 50. Payment note viewable by the payer. |
-| `settlementMemo` | optional | String | maximum 200. A memo is similar to Mixin Snapshots, this parameter you can customize. This parameter only takes effect when your settlementMethod is equal to mixin. |
+| `settlementMemo` | optional | String | maximum 200. A memo is similar to Mixin Snapshots, this parameter you can customize. |
 | `returnTo` | optional | String | After successful payment, the URL page will want to redirect to. Useful when you are in a browser JavaScript environment. |
 | `failedReturnTo` | optional | String | After payment failure, the URL page will want to redirect to. Useful when you are in a browser JavaScript environment. |
 | `callbackUrl` | optional | String | After payment successfully, MixPay will issue a POST request to this URL on our server-side. For security reasons, URLs only support HTTPS and has to be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.ASP). Please refer to [Payment Callback](https://mixpay.me/developers/api/payments/payment-callback). |
