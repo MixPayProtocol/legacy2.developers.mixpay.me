@@ -115,7 +115,6 @@ window.onload = function () {
     payeeId: '093bf620-9aba-4dab-90ad-6f2c9b32bb39',
     settlementAssetId: '4d8c508b-91c5-375b-92b0-ee702ed2dac5',
     settlementMemo: 'this is a demo.',
-    settlementMethod: 'mixin',
     orderId: '123131',
     fontSize: 16,
     remark: 'this is a demo.',
@@ -170,7 +169,6 @@ const mixpay = new MixPay(element, {
 | payeeId | string | '' | The Mixin UUID of the payee |
 | settlementAssetId | string | '' | AssetId of settlement cryptocurrency |
 | settlementMemo | string | '' | memo |
-| settlementMethod | string | mixin | 'mixin' or 'mixpay', settle to your Mixin Wallet or MixPay Account |
 | clientId | string | MixPay.newUUID() |  UUID of client of the payment |
 | traceId | string | '' | UUID of the payment for preventing duplicate payment |
 | orderId | string | null | orderId and payeeId makes a payment unique, must be 6-36 letters, [0-9a-zA-Z_-]{6,36} |
