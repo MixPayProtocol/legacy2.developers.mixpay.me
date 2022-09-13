@@ -69,7 +69,8 @@ curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
         "failureReason": "",
         // If status is `success`, will return `returnTo` when 
         // you create a payment, failed will return `failedReturnTo`'s value.
-        "returnTo": "https://www.exmaple.com/show_payment_success?order_id=xxxxx"
+        "returnTo": "https://www.exmaple.com/show_payment_success?order_id=xxxxx",
+        "traceId": "a38ed284-5689-4fb9-8c2a-91fba5e32ce9"
     },
     "timestampMs": 1656561881048
 }
