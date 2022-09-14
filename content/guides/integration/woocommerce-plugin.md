@@ -6,6 +6,6 @@ Please refer to this articles - [MixPay WordPress Plugin Deployment Tutorial](ht
 
 
 - [Download MixPay Plugin](https://wordpress.org/plugins/mixpay-gateway-for-woocommerce/) from WordPress.org
-- [Source Code (GitHub) ](https://github.com/MixPayHQ/mixpay-woocommerce-plugin)
+- [Source Code (GitHub) ](https://github.com/MixPayProtocol/mixpay-woocommerce-plugin)
 
 If you encounter any problem, feel free to [contact our customer service](https://mixpay.me/developers/guides/contact-customer-service).

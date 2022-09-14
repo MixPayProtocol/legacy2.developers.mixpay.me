@@ -86,7 +86,7 @@ Then you can use this [API](https://mixpay.me/developers/api/payments/payments-
 
 ## JS Plugin
 
-You can also integrate MixPay using the [JS Plugin](https://github.com/MixPayHQ/mixpayjs) we provide. It helps you have a more user-friendly experience on mobile, such as automatically pulling up a wallet, and the user can select a certain wallet to pay. When the user doesn't have a wallet on their phone, they will be alerted to make a manual transfer.
+You can also integrate MixPay using the [JS Plugin](https://github.com/MixPayProtocol/mixpayjs) we provide. It helps you have a more user-friendly experience on mobile, such as automatically pulling up a wallet, and the user can select a certain wallet to pay. When the user doesn't have a wallet on their phone, they will be alerted to make a manual transfer.
 
 ## Q & A
 
