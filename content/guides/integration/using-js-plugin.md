@@ -112,7 +112,7 @@ window.onload = function () {
   var mixpayModal = new MixPay(element, {
     isModal: true,
     hasMask: true,
-    payeeId: '093bf620-9aba-4dab-90ad-6f2c9b32bb39',
+    payeeId: 'a0d7791408776b47eb1dd3f94ed15d6a',
     settlementAssetId: '4d8c508b-91c5-375b-92b0-ee702ed2dac5',
     settlementMemo: 'this is a demo.',
     orderId: '123131',
