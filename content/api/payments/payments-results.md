@@ -28,7 +28,7 @@ https://api.mixpay.me/v1/payments_result
 
 ```json
 curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
--d "traceId"="a38ed284-5689-4fb9-8c2a-91fba5e32ce9"
+-d "traceId"="a0d7791408776b47eb1dd3f94ed15d6a"
 ```
 
 ```json
@@ -70,7 +70,7 @@ curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
         // If status is `success`, will return `returnTo` when 
         // you create a payment, failed will return `failedReturnTo`'s value.
         "returnTo": "https://www.exmaple.com/show_payment_success?order_id=xxxxx",
-        "traceId": "a38ed284-5689-4fb9-8c2a-91fba5e32ce9"
+        "traceId": "a0d7791408776b47eb1dd3f94ed15d6a"
     },
     "timestampMs": 1656561881048
 }

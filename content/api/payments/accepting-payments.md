@@ -58,7 +58,7 @@ The request will be:
 
 ```bash
 curl -i -X POST https://api.mixpay.me/v1/payments \
-  -d "payeeId"=a38ed284-5689-4fb9-8c2a-91fba5e32ce9 \
+  -d "payeeId"=a0d7791408776b47eb1dd3f94ed15d6a \
   -d "orderId"=myapp_20001 \
   -d "paymentAssetId"="43d61dcd-e413-450d-80b8-101d5e903357" \
   -d "settlementAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
@@ -84,7 +84,7 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
     "seconds":60,
     
     // Who will receive the money
-    "payeeId":"a38ed284-5689-4fb9-8c2a-91fba5e32ce9",
+    "payeeId":"a0d7791408776b47eb1dd3f94ed15d6a",
     
     // The trace id when the user pays, use to get the result of payment. 
     // You can use this to construct a Mixin Wallet request.

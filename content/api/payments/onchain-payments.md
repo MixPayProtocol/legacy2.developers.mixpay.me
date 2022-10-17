@@ -42,7 +42,7 @@ https://api.mixpay.me/v1/payments
 
 ```bash
 curl -i -X POST https://api.mixpay.me/v1/payments \
-  -d "payeeId"="a38ed284-5689-4fb9-8c2a-91fba5e32ce9" \
+  -d "payeeId"="a0d7791408776b47eb1dd3f94ed15d6a" \
   -d "paymentAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
   -d "settlementAssetId"="c6d0c728-2624-429b-8e0d-d9d19b6592fa" \
   -d "quoteAssetId"="usd" \
