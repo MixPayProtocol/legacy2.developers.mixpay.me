@@ -53,6 +53,24 @@ Global error response, example:
 
 | Code | Message |
 | :-- | :-- |
+| 10002 | This currency does not exist or is not supported for exchange.|
+| 10003 | The Quote currency in Memo is abnormal and not available.|
+| 10011 | Parameter error.|
+| 10021 | The payee in  Memo does not support the settlement currency in Memo.|
+| 10052 | Settlement currency is not available in Memo.|
+| 10053 | The current payment currency cannot be used as quote currency.|
+| 10054 | The current payment currency is not available.|
+| 10055 | The settlement currency in Memo has been removed.|
+| 10057 | The current payment currency has been removed.|
+| 10056 | The current quote currency has been removed.|
+| 10066 | The payee in  Memo does not support the settlement currency in Memo.|
+| 10067 | The payee in  Memo does not support payment in the current currency.|
+| 10068 | The payee in  Memo does not support using the current payment currency as the quote currency.|
+| 10069 | The current payment currency does not meet the minimum limit.|
+| 10070 | The current payment currency does not meet the maximum limit.|
+| 10071 | The current payment currency does not meet the minimum limit.|
+| 10072 | The current payment currency does not meet the maximum limit.|
+| 10074 | The payeeId is not available.|
 | 40000 | Payment timeout. |
 | 40001 | The payee does not exist in the url. |
 | 40002 | The asset in url does not exist or does not support exchanging. |
@@ -60,7 +78,7 @@ Global error response, example:
 | 40005 | The minimum number of decimal places in url exceeds the limit. |
 | 40006 | The minimum number of integer digits in url exceeds the limit. |
 | 40008 | Insufficient balance of assets. |
-| 40008 | Server error. |
+| 40009 | Server error. |
 | 40011 | The system is temporarily out of service. |
 | 40012 | Withdrawal methods with memo do not exist. |
 | 40013 | Withdrawal assets with memo do not exist. |
@@ -75,4 +93,4 @@ Global error response, example:
 | 40022 | TraceId does not exist. |
 | 40023 | Payee does not exist in Memo. |
 | 40024 | Wrong Amount paid. |
-
+| 40025 | Too much market volatility.|

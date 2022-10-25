@@ -89,6 +89,11 @@
             "title": "Payment Callback",
             "permalink": "payments/payment-callback",
             "contentPath": "payments/payment-callback.md"
+          },
+          {
+            "title": "Using Mixin Transaction Memo",
+            "permalink": "payments/mixin-memo-payment",
+            "contentPath": "payments/mixin-memo-payments.md"
           }
         ]
       },
