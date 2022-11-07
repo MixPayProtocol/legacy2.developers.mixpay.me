@@ -34,6 +34,13 @@ base64_decode('UE18ZDI0OWQwNDYtZjYzOC00NDFjLThlNDMtOThjZGI1N2EzMmM2fFRoaXMgaXMgb
 PM|d249d046-f638-441c-8e43-98cdb57a32c6
 ```
 
+Refund format, the last segment is refund error code, all possible code are [here](https://mixpay.me/developers/api/error-codes#reason-for-refund):
+
+```
+RF|12c55575-c85a-4b58-a245-19e6b678eee9|40025
+```
+
+
 ## Memo Specification
 
 Each parameter is separated by `|` and encoded in base64 format.
