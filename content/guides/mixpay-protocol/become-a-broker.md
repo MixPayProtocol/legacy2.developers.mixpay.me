@@ -8,15 +8,17 @@ This article will guide you how to use MixPay Protocol to integrate your payment
 
 The following screenshot is the Checkout Page of MixPay. After integration, your crypto wallet will appear in the FTX Pay and Binance Pay list:
 
-<p align="center">
-    <img src="https://mixpay.me/developers/images/checkout-page.png"/>
-</p>
+<div align="center">
+    <div style="max-width:320px">
+      <img src="https://mixpay.me/developers/images/checkout-page.png"/>
+    </div>
+</div>
 
 ## Terminology explain
 
 **What is "MixPay Protocol"?**
 
-"MixPay Protocol" is a set of specification for you, the payment provider, to integrate your payment method into MixPay Checkout page.
+Please watch [this YouTube Video](https://www.youtube.com/watch?v=hx7kkg6-XlA&ab_channel=MixPayProtocol).
 
 **What is a MixPay payment broker?**
 

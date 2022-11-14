@@ -67,6 +67,14 @@ video {
   }
 }
 
+@media (max-width: 540px) {
+
+  .youtube-video-frame {
+    width: 300px!important;
+    height: 240px!important;
+  }
+}
+
 
 @media (min-width: 1280px) {
 
