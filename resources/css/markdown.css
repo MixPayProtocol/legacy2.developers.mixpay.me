@@ -315,8 +315,8 @@
   color: var(--light-gray);
   font-size: 8rem;
   position: absolute;
-  left: 10px;
-  top: -40px;
+  left: 7px;
+  top: -19px;
 }
 
 .markdown .alert.alert-warning {

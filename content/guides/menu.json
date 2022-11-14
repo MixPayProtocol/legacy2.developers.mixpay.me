@@ -103,6 +103,21 @@
         ]
       },
       {
+        "name": "MixPay Protocol",
+        "docs": [
+          {
+            "title": "Become a broker",
+            "permalink": "mixpay-protocol/become-a-broker",
+            "contentPath": "mixpay-protocol/become-a-broker.md"
+          },
+          {
+            "title": "In App Payment",
+            "permalink": "mixpay-protocol/in-app-payment",
+            "contentPath": "mixpay-protocol/in-app-payment.md"
+          }
+        ]
+      },
+      {
         "name": "Help",
         "docs": [
           {
