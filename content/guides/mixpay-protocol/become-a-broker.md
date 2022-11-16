@@ -10,7 +10,7 @@ The following screenshot is the Checkout Page of MixPay. After integration, your
 
 <div align="center">
     <div style="max-width:320px">
-      <img src="https://mixpay.me/developers/images/checkout-page_v2.png"/>
+      <img src="https://mixpay.me/developers/images/checkout-page_v3.png"/>
     </div>
 </div>
 
