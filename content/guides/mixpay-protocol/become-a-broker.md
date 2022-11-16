@@ -6,11 +6,11 @@ summary: Integrate into MixPay Checkout page with your wallet payment method.
 
 This article will guide you how to use MixPay Protocol to integrate your payment method into the MixPay Checkout page.
 
-The following screenshot is the Checkout Page of MixPay. After integration, your crypto wallet will appear in the FTX Pay and Binance Pay list:
+The following screenshot is the Checkout Page of MixPay. After integration, your crypto wallet will appear in the Mixin Pay and Binance Pay list:
 
 <div align="center">
     <div style="max-width:320px">
-      <img src="https://mixpay.me/developers/images/checkout-page.png"/>
+      <img src="https://mixpay.me/developers/images/checkout-page_v2.png"/>
     </div>
 </div>
 
@@ -141,7 +141,7 @@ GET  HOST/mixpay/assets/range?payee_id=xxx&wallet=xxx
 | **Parameters** | **Types of** | **Conditions** | **Description** |
 | ------------ | ------------ | ------------ | ------------ |
 | payee_id | String 32-36 | required | MixPay's `payeeId`, the merchant's Mixin ID, in UUID format. |
-| wallet | String 20 | required | Wallet indentifier used for payment. There are currently `ftx`,`ftx_us`, `binance`. Customization is possible, but you have to notify the MixPay team. |
+| wallet | String 20 | required | Wallet indentifier used for payment. There are currently `binance`. Customization is possible, but you have to notify the MixPay team. |
 
 #### **Response:**
 
@@ -228,7 +228,7 @@ POST  HOST/mixpay/create_order
 | **Parameters** | **Types of** | **Conditions** | **Storage** | **Description** |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | payee_id | String 32-36 | required |  | MixPay's PayeeId, the merchant's Mixin ID, in UUID format. |
-| wallet | String 20 | required |  | The name of the wallet used for payment. There are currently `ftx`, `ftx_us`, `binance`. Can be customized, see **step 4**. |
+| wallet | String 20 | required |  | The name of the wallet used for payment. There are currently `binance`. Can be customized, see **step 4**. |
 | asset_id | String UUID | required | Yes | Digital asset UUID, defines the currency MixPay expects to receive. |
 | amount | float | required | Yes | The amount of money to be collected by MixPay. |
 | trace_id | String UUID | required | Yes | The MixPay system uses this `trace_id` to identify a payment order. |
@@ -375,7 +375,7 @@ The last step only requires you to provide the following information to the MixP
 
 -   The domain name used by the API you provided;
 
--   `Wallet` field is the value of your payment method, for example: `ftx`, `ftx_us`, `binance`.
+-   `Wallet` field is the value of your payment method, for example: `binance`.
 
 Generally, you can contact your account manager. If there is no account manager, please go to [Contact Customer Service - Help | MixPay Developer Documents](https://mixpay.me/developers/guides/contact-customer-service) , and someone in the group will assist you.
 
