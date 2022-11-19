@@ -2,6 +2,15 @@
 summary:  A frequently asked question for using MixPay crypto payment gateway.
 ---
 
+## How much do I cost to use MixPay?
+
+There are no setup fees or monthly fees for merchants to integrate the MixPay API.
+
+Merchants settle in cryptocurrency without any fees.
+
+## When payer pays with on-chain payment, is there a network fee for merchants?
+
+Merchants will always get the full amount in the quotes they choose, no matter how payer pays in any wallet or any crypto.
 
 ## When my Mixin robot recived money, how can I make sure it's come from MixPay?
 
