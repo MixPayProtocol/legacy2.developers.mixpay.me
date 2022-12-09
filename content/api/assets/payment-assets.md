@@ -70,9 +70,7 @@ curl -i -X GET -H "Content-Type: application/json" \
         "name": "Bitcoin",
         "symbol": "BTC",
         "iconUrl": "https://app.mixpay.me/fiats/c6d0c728-2624-429b-8e0d-d9d19b6592fa.png"
-      },
-      "minPaymentAmount": "0.00000043",
-      "maxPaymentAmount": "0.43547747"
+      }
     },
     ...
   ],
