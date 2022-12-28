@@ -18,3 +18,6 @@ You can use your Mixin robot in MixPay to recive money, and you want to use the 
 
 Every time [create a payment in MixPay](https://mixpay.me/developers/guides/integration-verview#how-to-integrate), you can specified a `traceId`. When reading your robot's [Mixin Snapshots](https://developers.mixin.one/docs/api/transfer/snapshots), there is a `memo` JSON field, base64 decode it, and you will get the original `traceId` you specified, please refer to [About Memo](https://mixpay.me/developers/api/memo).
  
+ ## What about refund logic? How can I deal with it?
+
+If a customer pays with a "tolerate period" (set by the `expiredTimestamp` when you create a payment) expired payment, if is "Pay with Mixin wallet", the crypto assets will refund, and the payment result will be `payment overtime`. If is "Pay using an on-chain Wallet", due to the crypto transfer's nature, we can not refund the money directly, we must get the customer's wallet address first, in this scenario, you can instruct the customer to [contact our customer service](https://help.mixpay.me/en_US/faq/how-to-contact-customer-service). 
