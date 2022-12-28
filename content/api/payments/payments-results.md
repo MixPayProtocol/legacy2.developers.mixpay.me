@@ -122,7 +122,7 @@ if ($payment_result["success"]) {
 ```
 
 :::warning
-IMPORTANT: You have to check both the `quoteSymbol` and `quoteAmount` to make sure a payment is paid successfully. 
+Security note: You have to check both the `quoteSymbol` and `quoteAmount` to make sure a payment is paid successfully. 
 :::
 
 
