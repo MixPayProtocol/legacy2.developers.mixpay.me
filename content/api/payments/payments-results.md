@@ -85,14 +85,14 @@ This response status returns `unpaid`, `pending`(processing), `failed` and `succ
 
 Besides checking the response `data.status` is equal to `success`, you MUST check the following two fileds matching your order:
 
-```
+```bash
 quoteAmount —— The amount you want user to pay
 quoteSymbol —— Currency of your choice.
 ```
 
 Here is the example code in PHP:
 
-```
+```php
 // Get the order from database
 $order = Order::find($order_id);
 
