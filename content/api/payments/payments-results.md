@@ -43,6 +43,9 @@ curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
         "status": "success",
         "quoteAmount": "0.01",
         "quoteSymbol": "USD",
+        // USDT
+        // "quoteAssetId": "a1283b13-d483-4262-90dd-3b1b324a81fb",
+        "quoteAssetId": "usd",
         "paymentAmount": "0.010013",
         "paymentSymbol": "USDT",
         "payee": "payee_username",
@@ -87,7 +90,7 @@ Besides checking the response `data.status` is equal to `success`, you MUST chec
 
 ```bash
 quoteAmount —— The amount you want user to pay
-quoteSymbol —— Currency of your choice.
+quoteAssetId —— Currency of your choice.
 ```
 
 Here is the example code in PHP:
@@ -105,12 +108,12 @@ if ($payment_result["success"]) {
   if ($payment_result["data"]["status"] == "success") {
 
     // 1. checking the payment amount is correct
-    if ($payment_result["data"]["quoteSymbol"] != $order->amountShouldPay) {
+    if ($payment_result["data"]["quoteAmount"] != $order->amountShouldPay) {
       throw new Exception('Payment amount not match, wrong amount!');
     }
 
     // 2. checking the currency
-    if ($payment_result["data"]["paymentSymbol"] != $order->paymentSymbol) {
+    if ($payment_result["data"]["quoteAssetId"] != $order->paymentSymbol) {
       throw new Exception('Payment amount not match, wrong currency!');
     }
 
@@ -122,7 +125,7 @@ if ($payment_result["success"]) {
 ```
 
 :::warning
-Security note: You have to check both the `quoteSymbol` and `quoteAmount` to make sure a payment is paid successfully. 
+Security note: You have to check both the `quoteAssetId` and `quoteAmount` to make sure a payment is paid successfully. 
 :::
 
 
