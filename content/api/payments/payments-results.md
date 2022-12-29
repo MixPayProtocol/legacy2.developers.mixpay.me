@@ -43,11 +43,12 @@ curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
         "status": "success",
         "quoteAmount": "0.01",
         "quoteSymbol": "USD",
-        // USDT
+        // If is USDT, then should be:
         // "quoteAssetId": "a1283b13-d483-4262-90dd-3b1b324a81fb",
         "quoteAssetId": "usd",
         "paymentAmount": "0.010013",
         "paymentSymbol": "USDT",
+        "paymentAssetId": "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
         "payee": "payee_username",
         "payeeMixinNumber": "38xxxxx08",
         "payeeAvatarUrl": "https://mixin-images.zeromesh.net/X_GkLgUq-z7ktU_u5maX99sJKWxxxxxx170k1XcSryAsinVwtPgCRwKRu3nkjHWSEOaKco1G4yDX2E=s256",
