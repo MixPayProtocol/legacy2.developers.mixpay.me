@@ -30,8 +30,12 @@ When your callback endpoint receives a call:
 
 - First, in your database, look for the incoming `orderId` or `traceId` value. **This step is essential, be careful anyone can post a fake value to your endpoint**;
 - If the previous step has a match, then call the [payments-results API](https://mixpay.me/developers/api/payments/payments-results), and check for `status` field to be `success`;
-- Only when the `status` filed is `success`, now you can safely mark your order as completed. 
+- If the `status` field is `success`, make sure to confirm the `quoteAmount` and `quoteAssetId` are both as expected before marking your order as completed.
 - Response to the callback (see below).
+
+:::warning
+**Caution**: To determine whether the payment was successful, you must check `quoteAmount` and `quoteAssetId`.
+:::
 
 ## Response to the callback
 
