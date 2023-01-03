@@ -87,10 +87,11 @@ This response status returns `unpaid`, `pending`(processing), `failed` and `succ
 
 ## Checking for success payment
 
-Besides checking the response `data.status` is equal to `success`, you MUST check the following two fileds matching your order:
+Besides checking the response `data.status` is equal to `success`, you MUST check the following fileds matching your order:
 
 ```bash
-quoteAmount —— The amount you want user to pay
+payeeId —— Does this payment result belong to you?
+quoteAmount —— The amount you want user to pay;
 quoteAssetId —— Currency of your choice.
 ```
 
@@ -131,7 +132,7 @@ if ($payment_result["success"]) {
 ```
 
 :::warning
-Security note: You have to check `payeeId`, `quoteAssetId` and `quoteAmount` to make sure a payment is paid successfully. 
+**Security note: You have to check `payeeId`, `quoteAssetId` and `quoteAmount` to make sure a payment is paid successfully. **
 :::
 
 
