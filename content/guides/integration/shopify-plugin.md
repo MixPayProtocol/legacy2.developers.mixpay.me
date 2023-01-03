@@ -10,7 +10,7 @@ Read more: [How to Accept Crypto Payments on Shopify with MixPay](https://mixpay
 
 ## How to intergrate?
 
-Please refer to this article - [MixPay Shopify Plugin Deployment Tutorial](https://help.mixpay.me/en_US/plugins/mixpay-shopify-plugin-deployment-tutorial).
+Please refer to this article - [MixPay Shopify Plugin Deployment Tutorial](https://help.mixpay.me/en/articles/6836902-mixpay-shopify-plugin-deployment-tutorial).
 
 ## Seeking for help?
 
