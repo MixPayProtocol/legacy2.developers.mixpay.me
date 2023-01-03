@@ -108,14 +108,19 @@ if ($payment_result["success"]) {
   // Handle `status` equal to `success`
   if ($payment_result["data"]["status"] == "success") {
 
-    // 1. checking the payment amount is correct
-    if ($payment_result["data"]["quoteAmount"] != $order->amountShouldPay) {
-      throw new Exception('Payment amount not match, wrong amount!');
+    // 1. checking the payeeId is correct
+    if ($payment_result["data"]["payeeId"] != $__my_payeeId__) {
+      throw new Exception('Wrong payeeId!');
     }
 
-    // 2. checking the currency
+    // 2. checking the payment amount is correct
+    if ($payment_result["data"]["quoteAmount"] != $order->amountShouldPay) {
+      throw new Exception('Wrong amount!');
+    }
+
+    // 3. checking the currency
     if ($payment_result["data"]["quoteAssetId"] != $order->paymentSymbol) {
-      throw new Exception('Payment amount not match, wrong currency!');
+      throw new Exception('Wrong currency!');
     }
 
     // ... now is safe to mark your order as paid, an do other logic ...

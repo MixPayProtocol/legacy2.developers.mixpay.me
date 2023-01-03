@@ -26,15 +26,15 @@ After payment successfully, MixPay will issue a POST request to this URL, with t
 **For security reasons, we're not passing the payment result on purpose. You can follow the instruction below for getting the payment result.**
 :::
 
-When your callback endpoint receives a call:
+When your callback endpoint receives a call, you MUST do the following checks:
 
 - First, in your database, look for the incoming `orderId` or `traceId` value. **This step is essential, be careful anyone can post a fake value to your endpoint**;
-- If the previous step has a match, then call the [payments-results API](https://mixpay.me/developers/api/payments/payments-results), and check for `status` field to be `success`;
-- If the `status` field is `success`, make sure to confirm the `quoteAmount` and `quoteAssetId` are both as expected before marking your order as completed.
-- Response to the callback (see below).
+- Call the [payments-results API](https://mixpay.me/developers/api/payments/payments-results), and check for `data.status` field to be `success`;
+- Check the `data.payeeId` is yours;
+- Check the `data.quoteAmount` and `data.quoteAssetId` are both match your order;
 
 :::warning
-**Caution**: To determine whether the payment was successful, you must check `quoteAmount` and `quoteAssetId`.
+**Caution**: **Only all of the conditions we mentioned above are passed, then you can mark your order as completed.**
 :::
 
 ## Response to the callback
