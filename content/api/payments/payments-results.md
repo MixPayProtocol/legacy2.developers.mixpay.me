@@ -50,6 +50,7 @@ curl -i -X GET -G https://api.mixpay.me/v1/payments_result \
         "paymentSymbol": "USDT",
         "paymentAssetId": "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
         "payee": "payee_username",
+        "payeeId": "xxxxx-xxx-xxx-xxx-xxxxxxx",
         "payeeMixinNumber": "38xxxxx08",
         "payeeAvatarUrl": "https://mixin-images.zeromesh.net/X_GkLgUq-z7ktU_u5maX99sJKWxxxxxx170k1XcSryAsinVwtPgCRwKRu3nkjHWSEOaKco1G4yDX2E=s256",
         // On-chain transaction ID, only when on-chain payment
