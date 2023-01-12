@@ -18,8 +18,6 @@ To get started, let's have a bird's eyes view of the MixPay Payment flow:
 When you receive the customer's payment, you have two options to transfer the crypto assets into: 
 
 1. Mixin Wallet (default) ;
-2. MixPay Wallet.
-
 
 
 Through the API of MixPay, the crypto paid by the user is **settled directly to your Mixin bot, MixPay user, or Mixin Wallet.**
