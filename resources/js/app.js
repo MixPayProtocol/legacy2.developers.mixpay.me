@@ -111,7 +111,7 @@ Alpine.data('selectBoxNavigate', function () {
     },
 
     visitUrl(e) {
-      up.navigate({ url: e.target.value })
+      window.location.href = e.target.value;
     },
   }
 })

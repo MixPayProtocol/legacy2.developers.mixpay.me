@@ -15,16 +15,9 @@ To get started, let's have a bird's eyes view of the MixPay Payment flow:
 
 ## Where does the money go?
 
-When you receive the customer's payment, you have two options to transfer the crypto assets into: 
+When you receive the customer's payment, all the crypto assets will go into your Mixin Wallet.
 
-1. Mixin Wallet (default) ;
-2. MixPay Wallet.
-
-
-
-Through the API of MixPay, the crypto paid by the user is **settled directly to your Mixin bot, MixPay user, or Mixin Wallet.**
-
-
+Through the API of MixPay, the crypto paid by the user is **settled directly to your Mixin bot、your Multi-Signature account or your Mixin Wallet.**
 
 ## Where to view all the transactions?
 
@@ -44,7 +37,7 @@ MixPay supports three types of accounts:
 
 - User account - Normal Mixin & MixPay user, the account you created using mobile phone numbers. The ID of the MixPay user is equal to the Mixin ID.
 - Multi-Signature account -  This is suitable for if multiple people own your store. Please refer to those articles:
-  -  [How to create a multi-signature account?](https://help.mixpay.me/tutorials/creat-a-multi-signature-account)  
+  - [How to create a multi-signature account?](https://help.mixpay.me/tutorials/creat-a-multi-signature-account)  
   - [How to use multi-signature group](https://help.mixpay.me/tutorials/how-to-use-multi-signature-group?from_search=93093843)
   - [How to use multi-signature groups and withdrawals?](https://help.mixpay.me/tutorials/how-to-use-multi-signature-groups-and-withdrawals)
 
@@ -63,7 +56,6 @@ There are two ways of getting the payee's UUID:
 - You can use this bot (7000101422) to get the Mixin User/Robot UUID, send the Mixin ID in the chat window to the bot, and it will reply with the corresponding UUID. It's simple, and no programming is required.
 
 - Also, if the user UUID you want to acquire is a MixPay user, you can quickly get this UUID via [Get Mixin UUID API](https://mixpay.me/developers/api/users/get-mixin-uuid).
-
 
 
 ## How to integrate? 
