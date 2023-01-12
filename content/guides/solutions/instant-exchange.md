@@ -33,10 +33,6 @@ Use the following three API to
 
 4.  You can use [On-chain Payments](https://mixpay.me/developers/api/payments/onchain-payments) and [Create Payments](https://mixpay.me/developers/api/payments/accepting-payments) API to create a payment. The specific parameters are as below. And you can place the payment link on a button.
 
-:::note
-Tip: Settlement assets support cryptocurrency and fiat currency; if you need fiat currency for settlement, just contact Robin(Mixin ID: **[26930](https://mixin.one/codes/89f7e832-ff53-4fff-ad47-10c68ec96ae2)**) to apply.
-:::
-
 When creating a payment, you need to pass a `traceId`; with traceId, you can get the payment result using this API - [Payments Results](https://mixpay.me/developers/api/payments/payments-results).
 
 The `traceId` you can generate randomly; the format is UUID; you need to create this UUID, and then store it in your orders database table for future to use, for example, checking the crypto payment result.
@@ -104,7 +100,7 @@ curl -i -X POST https://api.mixpay.me/v1/payments \
 | `traceId` | <span class="required">*required</span> | String | UUID, used to prevent double payment. |
 | `paymentAssetId` | <span class="required">*required</span> | String | assetId of payment cryptocurrency. |
 | `settlementAssetId` | <span class="required">*required</span> | String | assetId of settlement cryptocurrency. Settlement assets you prefer. If left blank, the payee will receive the cryptocurrency the user pays for. |
-| `quoteAssetId` | <span class="required">*required</span> | String | assetId of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
+| `quoteAssetId` | <span class="required">*required</span> | String | assetId of quote cryptocurrency.|
 | `quoteAmount` | <span class="required">*required</span> | Numeric | Amount of cryptocurrency received; if left blank, the user can enter manually. |
 | `isChain` | optional |  Boolean | Whether is on-chain payment or not. `true` is using on-chain payment, `false` means pay using Mixin App. |
 | `remark` | optional |  String | Payment remark viewable by the payee. |

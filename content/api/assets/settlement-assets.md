@@ -4,7 +4,7 @@ summary: setting/settlement_assets API lists all supported assets you can use as
 
 ## GET /setting/settlement_assets
 
-Settlement assets support cryptocurrency and fiat currency.
+List all the supported settlement assets.
 
 ### Endpoint URL
 
@@ -22,11 +22,11 @@ If you want to use a specified crypto asset we not yet publiclly supported, you 
 
 ### `quoteAssetId` | optional | String
 
-`assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. 
+`assetId` of quote cryptocurrency.
 
 ### `quoteAmount` | optional | Numeric
 
-Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USD.
+Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USDT
 
 **Notes: `quoteAmount` has to work together with `quoteAssetId`.**
 

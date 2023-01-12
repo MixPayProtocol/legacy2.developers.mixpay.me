@@ -20,8 +20,8 @@ https://api.mixpay.me/v1/payments
 | `orderId` | <span class="required">*required</span> if no `traceId` | String | Unique in your system. String lengths **between 6-36** must be letters, numbers, dashes and underscores and NOT space. `orderId` and `payeeId` make a payment unique. |
 | `paymentAssetId` | <span class="required">*required</span> | String | `assetId` of payment cryptocurrency. |
 | `settlementAssetId` | <span class="required">*required</span> | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. |
-| `quoteAmount` | <span class="required">*required</span> | Numeric | Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USD |
-| `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
+| `quoteAmount` | <span class="required">*required</span> | Numeric | Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USDT. |
+| `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency.|
 | `traceId` | optional | String |  UUID, used to prevent double payment and checking the payment result. You should use `orderId` instead.  |
 | `clientId` | optional | String | UUID of client of the payment. |
 | `paymentAmount` | optional | Numeric | The `quoteAmount` parameter is invalid when `paymentAmount` is not null. |

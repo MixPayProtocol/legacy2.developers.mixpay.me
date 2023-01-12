@@ -4,7 +4,7 @@ summary: setting/quote_assets API lists all supported assets you can use as the 
 
 ## GET /setting/quote_assets
 
-Quote assets support cryptocurrency and fiat currency.
+List all the supported quote assets.
 
 ### Endpoint URL
 
@@ -34,19 +34,6 @@ curl -i -X GET -H "Content-Type: application/json" \
   "success":true,
   "message":"",
   "data":[
-    {
-      "symbol":"USD",
-      "iconUrl":"https://mixpay.me/fiats/us.svg",
-      "minQuoteAmount":"0.1",
-      "maxQuoteAmount":"1000",
-      "decimalDigit":2,
-      // 0 fiat currency, 1 cryptocurrency
-      "isAsset":0,
-      "assetId":"usd",
-      "chainAsset":{
-        
-      }
-    },
     {
       "symbol":"BTC",
       "iconUrl":"https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",

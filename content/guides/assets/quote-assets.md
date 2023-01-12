@@ -1,5 +1,5 @@
 ---
-summary: Quote assets support cryptocurrencies and fiat currencies.
+summary: List all the Quote Assets.
 ---
 
 
@@ -7,7 +7,7 @@ MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for
 
 ## Quote Assets List
 
-Quote assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets, you can refer to this [API](https://mixpay.me/developers/api/assets/quote-assets).
+Detailed information about payment assets, you can refer to this [API](https://mixpay.me/developers/api/assets/quote-assets).
 
 ### **Cryptocurrencies**
 
@@ -28,14 +28,3 @@ Please always use the [quote-assets API](https://mixpay.me/developers/api/assets
 | Litecoin | LTC | 76c802a2-7c88-447f-a93e-c29c9e5dd9c8 | Litecoin |
 | SHIBA INU | SHIB | dcde18b9-f015-326f-b8b1-5b820a060e44 | Ethereum |
 | Meta AED | mAED | b5289c48-ec3a-3cdb-b2c4-0913d1812cd5 | Ethereum |
-
-### **Fiat Currencies**
-
-
-
-
-
-| Currency | IOS Code |
-| :-- | --- |
-| United States Dollar | usd |
-| United Arab Emirates Dirham | aed |

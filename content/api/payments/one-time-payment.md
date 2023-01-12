@@ -17,8 +17,8 @@ https://api.mixpay.me/v1/one_time_payment
 |  Param | Optional | Type | Description |
 | --- | --- | --- | --- |
 | `payeeId` | <span class="required">*required</span> | String | Account ID for receiving money, pls see [Three types of account](https://mixpay.me/developers/guides/integration-verview#three-types-of-account) and [How to get payeeId](https://mixpay.me/developers/guides/integration-verview#payee-id). |
-| `quoteAmount` | <span class="required">*required</span> | Numeric | Corresponding to the amount of `quoteAssetId`. For example, the current commodity value is 10 USD. |
-| `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
+| `quoteAmount` | <span class="required">*required</span> | Numeric | Corresponding to the amount of `quoteAssetId`. For example, the current commodity value is 10 USDT |
+| `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency.|
 | `settlementAssetId` | <span class="required">*required</span> | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. |
 | `isTemp` | <span class="required">*required</span> | Boolean | If `true`, it can be used only once. |
 | `paymentAssetId` | optional | String | `assetId` of payment cryptocurrency. |

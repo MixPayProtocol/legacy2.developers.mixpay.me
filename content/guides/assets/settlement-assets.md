@@ -1,23 +1,20 @@
 ---
-summary:  Settlement assets support cryptocurrencies and fiat currencies.
+summary:  All the settlement assets.
 ---
 
 MixPay is decentralised and supports Mixin Messenger and any on-chain wallet for payments. MixPay is very flexible because of its underlying ability to separate the three parts of the quote, payment and settlement. MixPay supports three settlement modes simultaneously: regular user, robot, and multi-signature group.
 
 ## Settlement Assets List
 
-Settlement assets support cryptocurrencies and fiat currencies. And the detailed information about payment assets [API](https://mixpay.me/developers/api/assets/settlement-assets).
+Detailed information about payment assets [API](https://mixpay.me/developers/api/assets/settlement-assets).
 
 ### **Cryptocurrencies**
-
-
 
 :::warning
 The following is just an example list, the assets support list changes over time, and most of the time, it will be outdated. 
 
 Please always use the [settlement-assets API](https://mixpay.me/developers/api/assets/settlement-assets) to get assets' UUID and check for all supported assets.
 :::
-
 
 
 | Currency | Symbol | UUID | Network |
@@ -32,19 +29,3 @@ Please always use the [settlement-assets API](https://mixpay.me/developers/api/a
 | Litecoin | LTC | 76c802a2-7c88-447f-a93e-c29c9e5dd9c8 | Litecoin |
 | SHIBA INU | SHIB | dcde18b9-f015-326f-b8b1-5b820a060e44 | Ethereum |
 | Meta AED | mAED | b5289c48-ec3a-3cdb-b2c4-0913d1812cd5 | Ethereum |
-
-### **Fiat Currencies**
-
-
-
-:::warning
-If you want to accept Fiat currencies as your settlement currency or want more supported Fiat currencies, you need to [contact our customer service](https://mixpay.me/developers/guides/contact-customer-service).
-
-:::
-
-
-
-| Currency | IOS Code |
-| :-- | --- |
-| United States Dollar | USD |
-| United Arab Emirates Dirham | AED |

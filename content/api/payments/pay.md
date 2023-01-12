@@ -27,7 +27,7 @@ https://mixpay.me/pay
 | `orderId` | <span class="required">*required</span> if no `traceId` | String | Unique in your system. String lengths **between 6-36** must be letters, numbers, dashes and underscores and NOT space. `orderId` and `payeeId` make a payment unique. |
 | `traceId` | optional | String |  UUID, used to prevent double payment and to check the payment result. You should use `orderId` instead.  |
 | `settlementAssetId` | optional | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. If left blank, the payee will receive the cryptocurrency the user pays for. |
-| `quoteAssetId` | optional | String | `assetId` of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
+| `quoteAssetId` | optional | String | `assetId` of quote cryptocurrency.|
 | `quoteAmount` | optional | Numeric | Amount of cryptocurrency received, if left blank, the user can enter manually. |
 | `remark` | optional | String |  maximum 50. Payment remark viewable by the payer. |
 | `settlementMemo` | optional | String | maximum 200. A memo is similar to Mixin Snapshots, this parameter you can customise. |

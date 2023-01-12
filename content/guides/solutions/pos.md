@@ -32,9 +32,6 @@ Next, we start with a detailed guide.
 2.  Also, you can use this bot(7000101422) to get the Mixin UUID; just send the Mixin ID in the chat window to the bot. It's simple, and no programming is required. Also, you can get this UUID via this [API](https://developers.mixin.one/docs/api/users/search), and you can click [here](https://developers.mixin.one/docs/dapp/getting-started/create-dapp) for the tutorial.
 3.  The ID of cryptocurrency you need to acquire. The type of assets is used for settlement and quote. Also, you can click [here](https://mixpay.me/developers/guides/assets) for the detail about supported assets.
 
-:::note
-Settlement assets support cryptocurrency and fiat currency; if you need fiat currency for settlement, just contact Robin(Mixin ID: **[26930](https://mixin.one/codes/89f7e832-ff53-4fff-ad47-10c68ec96ae2)**) to apply. And the Settlement assets parameter is best made configurable for easy replacement by merchants.
-:::
 
 1.  You can use this [API](https://mixpay.me/developers/api/payments/pay) to integrate with MixPay. The specific parameters are as below. And you can convert this URL to a QR code, and the customers scan the QR code to pay.
 
@@ -70,7 +67,7 @@ https://mixpay.me/pay?payeeId=a0d7791408776b47eb1dd3f94ed15d6a&settlementAssetId
 | --- | --- | --- | --- |
 | `payeeId` | <span class="required">*required</span> | String | Three settlement modes are supported, regular user, robot, and multisig group, so it is usually the Mixin UUID of a regular user or robot. You can also specify the multisigId of a sub-account. |
 | `settlementAssetId` | optional |  String | assetId of settlement cryptocurrency. Settlement assets you prefer. If left blank, the payee will receive the cryptocurrency the user pays for. |
-| `quoteAssetId` | optional |  String | assetId of quote cryptocurrency, the asset include cryptocurrency and fiat currency. |
+| `quoteAssetId` | optional |  String | assetId of quote cryptocurrency.|
 | `quoteAmount` | optional |  Numeric | Amount of cryptocurrency received, if left blank, the user can enter manually. |
 | `remark` | optional |  String | Payment remark viewable by the payee. |
 | `traceId` | optional |  String | UUID, used to prevent double payment. |

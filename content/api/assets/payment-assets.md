@@ -22,11 +22,11 @@ If you want to support more crypto assets or remove some assets, you can [contac
 
 ### `quoteAssetId` | optional | String
 
-`assetId` of quote cryptocurrency, the asset includes cryptocurrency and fiat currency. 
+`assetId` of quote cryptocurrency. 
 
 ### `quoteAmount` | optional | Numeric
 
-Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USD.
+Corresponding to the amount of quoteAssetId, for example, the current commodity value is 10 USDT.
 
 **Notes: `quoteAmount` has to work together with `quoteAssetId`.**
 
