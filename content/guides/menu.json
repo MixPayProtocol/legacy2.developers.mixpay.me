@@ -111,9 +111,9 @@
             "contentPath": "mixpay-protocol/become-a-broker.md"
           },
           {
-            "title": "In App Payment",
-            "permalink": "mixpay-protocol/in-app-payment",
-            "contentPath": "mixpay-protocol/in-app-payment.md"
+            "title": "MixPay+ integration guide",
+            "permalink": "mixpay-protocol/mixpay-plus",
+            "contentPath": "mixpay-protocol/mixpay-plus.md"
           }
         ]
       },
