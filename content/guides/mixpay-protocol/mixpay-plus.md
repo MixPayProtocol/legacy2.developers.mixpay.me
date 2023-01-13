@@ -11,9 +11,7 @@ This document is used to guide crypto wallet App developers to integrate your pa
 
 After integration, when users scan the payment QRCode with your wallet App and open the MixPay Checkout Page, they can use your wallet to pay. And the User Experience is close to App Native.
 
-
-
-![](https://mixpay.me/developers/images/qrcode.png)
+<img src="https://mixpay.me/developers/images/qrcode.png" style="max-width: 320px;">
 
 
 ## Get started
@@ -24,13 +22,13 @@ The `mixpayPlus` object needs to have the following configuration and methods:
 
 ```javascript
 window.mixpayPlus = {
-  appId: 'example', // 唯一标识
-  appName: 'Example Pay'， // 按钮|选项会显示成 Example Pay
-  appIcon: 'https://xxxx.xxx/xxx.png', // 图标链接
-  themeColor: '#fff', // 按钮颜色
-  assetList: [], // 钱包方支持的支付币种
-  ready: false, // 能否调用支付功能 false
-  pay: function(optionsJSON) {} // 拉起转账
+  appId: 'your-wallet-name',
+  appName: 'XXX Pay',
+  appIcon: 'https://xxxx.xxx/xxx.png', // Custom icon
+  themeColor: '#fff', // Customize button background color
+  assetList: [], // List of supported payment currencies
+  ready: false, // Are the `pay` methods available? 
+  pay: function(optionsJSON) {} // Button click triggers the callback method
 }
 ```
 
