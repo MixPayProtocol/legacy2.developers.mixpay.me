@@ -8,7 +8,7 @@ This guide will show you the MixPay ecosystem. Get you to warn up for integratin
 
 First of all, let's get familiar with Mixin & MixPay.
 
-### 1. Whit is Mixin?
+### 1. What is Mixin?
 
 In general, [Mixin](https://mixin.one/) consists of two-part:
 
