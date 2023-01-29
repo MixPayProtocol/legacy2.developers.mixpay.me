@@ -11,5 +11,5 @@ MixPay will be traded in real-time through the exchange at the time of settlemen
 
 	In addition, you need to pay attention when you use Fiat currency as `quoteAssetId`. If the quoted currency is Fiat, `AED`, the settlement currency will be `mAED`. Otherwise, the settlement currency will be `USDC`.
 
-2. If you enable strict mode, payers cannot make the payments under the above extreme conditions because MixPay can only settle according to the `settlementAssetId`. 
+2. If you enable strict mode, payers cannot make the payments under the above extreme conditions because MixPay can only settle according to the `settlementAssetId` and payers won't able to make payments.
 
