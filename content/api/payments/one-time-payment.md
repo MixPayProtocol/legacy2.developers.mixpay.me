@@ -19,7 +19,8 @@ https://api.mixpay.me/v1/one_time_payment
 | `payeeId` | <span class="required">*required</span> | String | Account ID for receiving money, pls see [Three types of account](https://mixpay.me/developers/guides/integration-verview#three-types-of-account) and [How to get payeeId](https://mixpay.me/developers/guides/integration-verview#payee-id). |
 | `quoteAmount` | <span class="required">*required</span> | Numeric | Corresponding to the amount of `quoteAssetId`. For example, the current commodity value is 10 USDT |
 | `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency.|
-| `settlementAssetId` | <span class="required">*required</span> | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. |
+| `settlementAssetId` | <span class="required">*required</span> | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. But you need to pay attention to the `strictMode` field.|
+| `strictMode` | optional | Boolean | Default `false`. `true` means that the payment must be settled strictly according to the currency set by settlementAssetId. See [here](https://mixpay.me/developers/api/strict-mode) for more details.|
 | `isTemp` | <span class="required">*required</span> | Boolean | If `true`, it can be used only once. |
 | `paymentAssetId` | optional | String | `assetId` of payment cryptocurrency. |
 | `remark` | optional | String | maximum 50. Payment remark viewable by the payee. |

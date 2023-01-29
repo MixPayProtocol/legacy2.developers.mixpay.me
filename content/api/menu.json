@@ -29,6 +29,11 @@
             "title": "About Memo",
             "permalink": "memo",
             "contentPath": "connect/memo.md"
+          },
+          {
+            "title": "Strict Mode",
+            "permalink": "strict-mode",
+            "contentPath": "connect/strict-mode.md"
           }
         ]
       },
