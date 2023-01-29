@@ -31,9 +31,9 @@
             "contentPath": "integration/using-paylink.md"
           },
           {
-            "title": "Using JS Plugin",
-            "permalink": "using-js-plugin",
-            "contentPath": "integration/using-js-plugin.md"
+            "title": "Using JS SDK",
+            "permalink": "using-js-sdk",
+            "contentPath": "integration/using-js-sdk.md"
           },
           {
             "title": "Using Raw API",
