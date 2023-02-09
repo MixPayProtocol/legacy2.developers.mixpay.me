@@ -4,7 +4,7 @@ summary:  MixPay payment link page for quickly accepting crypto payments.
 
 ## GET /pay
 
-You only need to set the amount and currency of the payment link, and MixPay will do the rest.
+This payment method is easy to set up and is suitable for scenarios that require repeated use.
 
 ### Endpoint URL
 
@@ -46,3 +46,9 @@ You can copy the link and open it in a browser:
 ```bash
 https://mixpay.me/pay?payeeId=a0d7791408776b47eb1dd3f94ed15d6a&settlementAssetId=c6d0c728-2624-429b-8e0d-d9d19b6592fa&quoteAssetId=usd&quoteAmount=10
 ```
+
+:::note
+We recommend [short link](https://mixpay.me/developers/api/payments/one-time-payment) if you want to use so many parameters.
+
+Although this method is more convenient, and you may be more inclined to use this method of splicing parameters, you need to pay attention that when using this method, people can easily in the browser change the parameters you set.
+:::

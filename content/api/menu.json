@@ -71,6 +71,11 @@
         "name": "Create Payment",
         "docs": [
           {
+            "title": "Using Short Link",
+            "permalink": "payments/one-time-payment",
+            "contentPath": "payments/one-time-payment.md"
+          },
+          {
             "title": "Using Paylink",
             "permalink": "payments/pay",
             "contentPath": "payments/pay.md"
@@ -86,11 +91,6 @@
             "contentPath": "payments/onchain-payments.md"
           },
           {
-            "title": "Create an One-time Payment",
-            "permalink": "payments/one-time-payment",
-            "contentPath": "payments/one-time-payment.md"
-          },
-          {
             "title": "Payment Callback",
             "permalink": "payments/payment-callback",
             "contentPath": "payments/payment-callback.md"
@@ -103,7 +103,7 @@
         ]
       },
       {
-        "name": "Payments",
+        "name": "Payment Info",
         "docs": [
           {
             "title": "Payments Results",

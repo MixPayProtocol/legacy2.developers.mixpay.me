@@ -4,7 +4,7 @@ summary:  MixPay API for creating a one-time payment.
 
 ## POST /one_time_payment
 
-If you think the above link is too long, you can use the following API to generate a temporary payment code and send this link to the payer. And temporary links can be used only once.
+This payment method needs to request the API to generate a code before it can be used, and is suitable for scenarios where only one payment is allowed.
 
 ### Endpoint URL
 

@@ -31,7 +31,6 @@ When customers are on the checkout page, provide a "Pay with Crypto" button (wit
 2. On our MixPay payment page, customers pay the crypto coin;
 3. We will redirect you to your site after the customer finishes the payment.
 
-
 ## Parameters explain
 
 Below is how to construct the URL parameters, according to the example URL above: 
@@ -54,12 +53,14 @@ returnTo=https%3A%2F%2Fgoogle.com
 6. `returnTo` when the payment is finished, the customer will be redirected to this URL. Generally will be the order detail page.
 
 
+:::note
+The above example is for you to understand how to use MixPay faster. We recommend [short link](https://mixpay.me/developers/api/payments/one-time-payment) if you want to use so many parameters.
+
+Although this method is more convenient, and you may be more inclined to use this method of splicing parameters, you need to pay attention that when using this method, people can easily in the browser change the parameters you set.
+:::
 
 ## Getting the result
 
 At this point, customers are paying crypto using our Paylink; how can you get the paying results?
 
-On your server side, you can loop through the [payments-results API](https://mixpay.me/developers/api/payments/payments-results) using `orderId` + `payeeId`.
-
-It's recommended to implement the [Payment Callback](https://mixpay.me/developers/api/payments/payment-callback) flow for better performance.
-
+You can use the [Payment Callback](https://mixpay.me/developers/api/payments/payment-callback) to get the feedback.
