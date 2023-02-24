@@ -9,6 +9,11 @@
             "title": "API Overview",
             "permalink": "overview",
             "contentPath": "overview.md"
+          },
+          {
+            "title": "Change Log",
+            "permalink": "change-log",
+            "contentPath": "change-log.md"
           }
         ]
       },

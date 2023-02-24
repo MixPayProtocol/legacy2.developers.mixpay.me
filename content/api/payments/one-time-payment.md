@@ -21,7 +21,6 @@ https://api.mixpay.me/v1/one_time_payment
 | `quoteAssetId` | <span class="required">*required</span> | String | `assetId` of quote cryptocurrency.|
 | `settlementAssetId` | <span class="required">*required</span> | String | `assetId` of settlement cryptocurrency. Settlement assets you prefer. But you need to pay attention to the `strictMode` field.|
 | `strictMode` | optional | Boolean | Default `false`. `true` means that the payment must be settled strictly according to the currency set by settlementAssetId. See [here](https://mixpay.me/developers/api/strict-mode) for more details.|
-| `isTemp` | <span class="required">*required</span> | Boolean | If `true`, it can be paid only once. If `false`, the created `code` can be paid multiple times.|
 | `paymentAssetId` | optional | String | `assetId` of payment cryptocurrency. |
 | `remark` | optional | String | maximum 50. Payment remark viewable by the payee. |
 | `expireSeconds` | optional | Numeric | Default 86400, minimum 1, maximum 31536000. After this time, the code obtained by the interface will become invalid.|
