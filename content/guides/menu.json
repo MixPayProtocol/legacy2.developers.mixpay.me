@@ -114,6 +114,11 @@
             "title": "MixPay+ integration guide",
             "permalink": "mixpay-protocol/mixpay-plus",
             "contentPath": "mixpay-protocol/mixpay-plus.md"
+          },
+          {
+            "title": "Invoke wallet App",
+            "permalink": "mixpay-protocol/invoke-wallet-app",
+            "contentPath": "mixpay-protocol/invoke-wallet-app.md"
           }
         ]
       },
