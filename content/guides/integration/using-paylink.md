@@ -4,6 +4,14 @@ summary:  You can use our MixPay payment page to create a MixPay payment. Paylin
 
 You can use our MixPay payment page to create a MixPay payment. Paylink is the most convenient way of integrating MixPay.
 
+:::warning
+IMPORTANT: The paylink example is for you to understand how to use MixPay works. We recommend using [short link](https://mixpay.me/developers/api/payments/one-time-payment) in the production.
+
+Although this method is more convenient, and you may be more inclined to use this method of splicing parameters, you need to pay attention that when using this method, people can easily in the browser change the parameters you set.
+
+Please checkout the [Security Guidelines](https://mixpay.me/developers/guides/security-guidelines).
+:::
+
 ## Start with an example.
 
 Here is an example, click the following button and check it out yourself:
@@ -53,11 +61,6 @@ returnTo=https%3A%2F%2Fgoogle.com
 6. `returnTo` when the payment is finished, the customer will be redirected to this URL. Generally will be the order detail page.
 
 
-:::note
-The above example is for you to understand how to use MixPay faster. We recommend [short link](https://mixpay.me/developers/api/payments/one-time-payment) if you want to use so many parameters.
-
-Although this method is more convenient, and you may be more inclined to use this method of splicing parameters, you need to pay attention that when using this method, people can easily in the browser change the parameters you set.
-:::
 
 ## Getting the result
 

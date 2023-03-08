@@ -14,6 +14,11 @@
             "title": "Getting Started",
             "permalink": "getting-started",
             "contentPath": "getting-started.md"
+          },
+          {
+            "title": "Security Guidelines",
+            "permalink": "security-guidelines",
+            "contentPath": "security-guidelines.md"
           }
         ]
       },
