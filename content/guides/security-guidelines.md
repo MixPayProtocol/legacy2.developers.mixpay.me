@@ -98,6 +98,6 @@ The rules for short link are as follows:
 
 You can using the Mixin API [GET /snapshots](https://developers.mixin.one/docs/api/transfer/snapshots) for monitoring the crypto coming into your robot's wallet. 
 
-Ony when the money is really recived, then the order can be mark as paid.
+Only when the money is really recived, then the order can be mark as paid.
 
 
