@@ -5,7 +5,7 @@ summary: This guide will show you the security must do and best practice when us
 This guide will show you the security must do and best practice when using MixPay.
 
 
-## MUST: Always verify the quote amount and the payeeId
+## 1. MUST: Always verify the quote amount and the payeeId
 
 
 Never rely on the [payments-results API](https://mixpay.me/developers/api/payments/payments-results)'s return `data.status` = `success` to mark an order is successfully paid.
@@ -81,7 +81,7 @@ if ($payment_result["success"]) {
 }
 ```
 
-##  Storngly recommended: Always using short link for production
+##  2. Storngly recommended: Always using short link for production
 
 
 As we mentioned above, malicious users can easily modify the parameters in the URL, and using [short link](https://mixpay.me/developers/api/payments/one-time-payment) can eliminate the possibility of users passing parameters.
@@ -92,7 +92,7 @@ The rules for short link are as follows:
 - Once the merchant's orderId is used to create a short link, it cannot be paid by [using paylink](https://mixpay.me/developers/guides/using-paylink).
 
 
-## Best practice: Watching the Mixin snapshot for income
+## 3. Best practice: Watching the Mixin snapshot for income
 
 > This method is for more advanced user. And the payeeId has to be a Mixin robot (see [Three types of account](https://mixpay.me/developers/guides/integration-verview#three-types-of-account)). 
 
