@@ -5,7 +5,7 @@ summary:  You can use our MixPay payment page to create a MixPay payment. Paylin
 You can use our MixPay payment page to create a MixPay payment. Paylink is the most convenient way of integrating MixPay.
 
 :::warning
-IMPORTANT: The paylink example is for you to understand how to use MixPay works. We recommend using [short link](https://mixpay.me/developers/api/payments/one-time-payment) in the production.
+IMPORTANT: The paylink example is for new users to understand how the MixPay payment flow. We recommend using [short link](https://mixpay.me/developers/api/payments/one-time-payment) in the production.
 
 Although this method is more convenient, and you may be more inclined to use this method of splicing parameters, you need to pay attention that when using this method, people can easily in the browser change the parameters you set.
 
