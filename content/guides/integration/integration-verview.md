@@ -37,9 +37,8 @@ MixPay supports three types of accounts:
 
 - User account - Normal Mixin & MixPay user, the account you created using mobile phone numbers. The ID of the MixPay user is equal to the Mixin ID.
 - Multi-Signature account -  This is suitable for if multiple people own your store. Please refer to those articles:
-  - [How to create a multi-signature account?](https://help.mixpay.me/tutorials/creat-a-multi-signature-account)  
-  - [How to use multi-signature group](https://help.mixpay.me/tutorials/how-to-use-multi-signature-group?from_search=93093843)
-  - [How to use multi-signature groups and withdrawals?](https://help.mixpay.me/tutorials/how-to-use-multi-signature-groups-and-withdrawals)
+  - [How to create a multi-signature account?](https://www.youtube.com/watch?v=TYkM_Uo1Zgs&ab_channel=MixPayProtocol)
+  - [How to use multi-signature groups and withdrawals?](https://www.youtube.com/watch?v=tnPKGEglBSE&list=PLPd8WskPRWcx3lRmQfBxpFL021unFo7nN&index=8&ab_channel=MixPayProtocol)
 
 - Mixin Robot account - [Mixin's Messenger Bot](https://developers.mixin.one/docs/dapp/mixin-applications#messenger-bot) it's programmable, thus, is more flexible; this is for more advanced users.
 
