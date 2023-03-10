@@ -6,6 +6,9 @@ summary:  MixPay API for creating a one-time payment.
 
 This payment method needs to request the API to generate a code before it can be used, and is suitable for scenarios where only one payment is allowed.
 
+
+> This is the recommended way to use in production. Please checkout the [Security Guidelines](https://mixpay.me/developers/guides/security-guidelines).
+
 ### Endpoint URL
 
 ```

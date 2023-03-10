@@ -121,7 +121,7 @@ if ($payment_result["success"]) {
     }
 
     // 3. checking the currency
-    if ($payment_result["data"]["quoteAssetId"] != $order->paymentSymbol) {
+    if ($payment_result["data"]["quoteAssetId"] != $order->paymentAssetId) {
       throw new Exception('Wrong currency!');
     }
 
@@ -136,6 +136,8 @@ if ($payment_result["success"]) {
 **Security note: You have to check `payeeId`, `quoteAssetId` and `quoteAmount` to make sure a payment is paid successfully. **
 :::
 
+
+> Please checkout the [Security Guidelines](https://mixpay.me/developers/guides/security-guidelines).
 
 ## Checking for failure
 
