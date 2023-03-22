@@ -62,6 +62,18 @@ returnTo=https%3A%2F%2Fgoogle.com
 
 
 
+There are several parameters here, used to specify the default behavior of the Checkout Page.
+
+7. `paymentAssetId` is used to specify the coin that the user wants to pay with, and you can see the supported asset id in [Payment Assets](https://mixpay.me/developers/api/assets/payment-assets) in UUID format.
+8. `paymentMethod` is used to specify the payment type, which can be `crypto`, `mixpayplus`, or `binance`.
+9. `style` The page is divided into PC template, mobile universal template, and mobile wallet template. Setting `style=mobile` can force the mobile side to use the universal template.
+
+[PC Template]:https://mixpay.me/developers/images/pc-template.png
+[Mobile Universal Template]:https://mixpay.me/developers/images/mobile-universal-template.png
+[Mobile Wallet Template]:https://mixpay.me/developers/images/mobile-wallet-template.png
+
+
+
 ## Getting the result
 
 At this point, customers are paying crypto using our Paylink; how can you get the paying results?
